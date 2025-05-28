@@ -5,3 +5,7 @@
 2. Scripthook v2 [Link](https://www.nexusmods.com/reddeadredemption2/mods/1472?tab=description)
 3. ASI Loader [Link](https://www.nexusmods.com/reddeadredemption2/mods/1472?tab=files)
 4. Online Content Unlocker [Link](https://www.nexusmods.com/reddeadredemption2/mods/1688)
+5. Rampage Trainer [Link](https://www.nexusmods.com/reddeadredemption2/mods/233)
+
+## Basic Necessary Mods
+1. 
