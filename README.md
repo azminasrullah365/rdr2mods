@@ -15,6 +15,7 @@
 3. Rain Particles [Fix](https://www.nexusmods.com/reddeadredemption2/mods/5452?tab=files)
 4. Vomit [Fix](https://www.nexusmods.com/reddeadredemption2/mods/3912?tab=description)
 5. Saint Denis Police Uniform and John's Coat Physics [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/4909?tab=description)
+6. Duplicate Valentine Doctor Bug [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4173?tab=description)
 
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
