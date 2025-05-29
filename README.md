@@ -26,7 +26,7 @@
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
 2. Gameplay (Action) [Hotkeys](https://www.nexusmods.com/reddeadredemption2/mods/2559?tab=description). I only use to draw binocular
-3. 
+3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
 
 ## Basic Necessary Mods
 1. No Cinematic [Black Bars](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
