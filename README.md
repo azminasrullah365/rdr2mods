@@ -23,7 +23,7 @@
 11. Fixed Prison Scars [Consistency](https://www.nexusmods.com/reddeadredemption2/mods/4607?tab=description)
 12. Enhanced Entity and World Persistence [Reloaded](https://www.nexusmods.com/reddeadredemption2/mods/5864?tab=description) 1.1
 
-## Optionala
+## Optionals
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
 2. Gameplay (Action) [Hotkeys](https://www.nexusmods.com/reddeadredemption2/mods/2559?tab=description). I only use to draw binocular
 3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
