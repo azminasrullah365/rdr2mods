@@ -1,5 +1,7 @@
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmYkh80D5i2Rv7qgmZGQ-Q-I9Wj91nHR_gTIlgknSHMlLpmvQ)
 # Red Dead Redemption Mods
+### I like Vanila with Sprinkles
+### Credits goes to each Modder. I am just tweaked them to my linkings.
 
 ## Prerequisites
 1. Lenny's Mod [Loader](https://www.rdr2mods.com/downloads/rdr2/tools/76-lennys-mod-loader-rdr/)
