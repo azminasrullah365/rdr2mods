@@ -38,7 +38,7 @@
 
 ## Recommended Basics
 1. Ingame Pointer (Hand Cursor)
-2. No Cinematic Black Bars
+2. [No](https://www.nexusmods.com/reddeadredemption2/mods/1389?tab=files) Cinematic Black Bars
 3. [Walking Control](https://www.nexusmods.com/reddeadredemption2/mods/2355) Complete
 4. [Smoking](https://www.nexusmods.com/reddeadredemption2/mods/2827?tab=description) Complete
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
