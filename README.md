@@ -36,7 +36,7 @@
 7. 
 
 ## Recommended Basics
-1. [No](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)  Cinematic Black Bars
+1. No Cinematic Black Bars
 3. [Walking Control](https://www.nexusmods.com/reddeadredemption2/mods/2355) Complete
 4. [Smoking](https://www.nexusmods.com/reddeadredemption2/mods/2827?tab=description) Complete
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
@@ -44,6 +44,8 @@
 7. [No](https://www.nexusmods.com/reddeadredemption2/mods/1775) Unprovoked Combat Stance
 8. Ambient Cattles and Cowgirls
 9. Dirty Union Suits
+10. Green Winter Shotgun Coat
+11. 
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
