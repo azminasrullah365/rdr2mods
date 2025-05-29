@@ -1,0 +1,16 @@
+<EasyInstall>
+    <Name>Brighter Day and Darker Night</Name>
+    <Author>AzmiNssrullah365</Author>
+    <Version>2025</Version>
+    <Link></Link>
+    <Metadata>
+    </Metadata>
+    <Resources>
+        <Resource>
+            <FileReplacement>
+                <GamePath>update:/common/data/visualsettings.dat</GamePath>
+                <FilePath>visualsettings.dat</FilePath>
+            </FileReplacement>
+        </Resource>
+    </Resources>
+</EasyInstall>
