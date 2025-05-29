@@ -39,3 +39,6 @@
 6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip Weapons
 7. [No](https://www.nexusmods.com/reddeadredemption2/mods/1775) Unprovoked Combat Stance
 8. 
+
+## Ambients Enrichment Mods
+1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
