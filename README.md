@@ -48,7 +48,8 @@
 9. Dirty Union Suits
 10. Green Winter Shotgun Coat
 11. Black Stripes Zebra
-12. 
+12. Brighter Day and Darker Night
+13. 
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
