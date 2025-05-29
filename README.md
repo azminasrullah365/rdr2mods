@@ -20,6 +20,7 @@
 8. Floating Horseshoe Fix and Placeholder Poster [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4688?tab=description)
 9. Jailbreak Ped [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4767?tab=description)
 10. Micah's Gold Teeth [Fix](https://www.nexusmods.com/reddeadredemption2/mods/5760?tab=description)
+11. Fixed Prison Scars [Consistency](https://www.nexusmods.com/reddeadredemption2/mods/4607?tab=description)
 
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
