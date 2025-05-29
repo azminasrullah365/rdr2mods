@@ -54,6 +54,8 @@
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
+2. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
+3. 
 
 ## Optional Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
