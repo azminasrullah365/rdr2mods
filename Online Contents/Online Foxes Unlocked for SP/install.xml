@@ -1,0 +1,12 @@
+<EasyInstall>
+    <Name>Online Foxes Unlocked for SP</Name>
+    <Author>PlayRedThenStayDead</Author>
+    <Version>1.0</Version>
+    <Link></Link>
+    <Metadata></Metadata>
+    <Resources>
+        <Resource>
+	    <StreamingFiles>stream</StreamingFiles>
+        </Resource>      
+    </Resources>
+</EasyInstall>
