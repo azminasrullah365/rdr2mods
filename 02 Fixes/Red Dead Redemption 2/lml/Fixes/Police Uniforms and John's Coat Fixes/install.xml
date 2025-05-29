@@ -1,0 +1,15 @@
+<EasyInstall>
+	<Name>Saint Denis Police Uniforms and John's Coat Fixes</Name>
+	<!-- Original Author-->
+	<Author>goldenplaysterraria</Author>
+
+	<!-- Me Just putting things into folders and adds Install.xml-->
+	<Version>1.0</Version>
+	<Link>https://www.nexusmods.com/reddeadredemption2/mods/4909?tab=description</Link>
+	<Metadata/>
+	<Resources>
+		<Resource>
+            <StreamingFiles>stream</StreamingFiles>
+		</Resource>
+	</Resources>
+</EasyInstall>
