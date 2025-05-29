@@ -39,11 +39,12 @@
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
 6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip Weapons
 7. [No](https://www.nexusmods.com/reddeadredemption2/mods/1775) Unprovoked Combat Stance
-8. 
+8. Ambient [Cattles](https://www.nexusmods.com/reddeadredemption2/mods/6101?tab=description)
+9. [Cowgirls](https://www.nexusmods.com/reddeadredemption2/mods/1843?tab=description) Revisioned
+10. 
 
 ## Ambients Enrichment
-1. Ambient [Cattles & Cowgirls](https://www.nexusmods.com/reddeadredemption2/mods/6101?tab=description)
-2. [Cowgirls](https://www.nexusmods.com/reddeadredemption2/mods/1843?tab=description) Revisioned
+1. 
    a.
    b.  
 3.     
