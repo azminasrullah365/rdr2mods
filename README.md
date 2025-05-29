@@ -34,4 +34,4 @@
 3. [Walking Control](https://www.nexusmods.com/reddeadredemption2/mods/2355) Complete
 4. [Smoking](https://www.nexusmods.com/reddeadredemption2/mods/2827?tab=description) Complete
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
-6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip 
+6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip Weapons
