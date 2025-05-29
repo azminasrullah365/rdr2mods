@@ -45,11 +45,13 @@
 8. Ambient Cattles and Cowgirls
 9. Dirty Union Suits
 10. Green Winter Shotgun Coat
-11. 
+11. Black Stripes Zebra
+12. 
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
 
 ## Optional Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
-2. 
+2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
+3. 
