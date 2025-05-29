@@ -16,6 +16,8 @@
 4. Vomit [Fix](https://www.nexusmods.com/reddeadredemption2/mods/3912?tab=description)
 5. Saint Denis Police Uniform and John's Coat Physics [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/4909?tab=description)
 6. Duplicate Valentine Doctor Bug [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4173?tab=description)
+7. Wrong Angus Bull [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4485?tab=files)
+8. Floating Horseshoe Fix and Placeholder Poster [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4688?tab=description)
 
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
