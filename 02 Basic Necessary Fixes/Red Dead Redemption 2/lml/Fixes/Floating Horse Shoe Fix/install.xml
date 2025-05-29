@@ -1,0 +1,16 @@
+<EasyInstall>
+	<Name>Floating Horse Shoe Fix</Name>
+	<!-- Original Author-->
+	<Author>goldenplaysterraria</Author>
+
+	<!-- Me just tiding things -->
+	<Author>azminasrullah365</Author>
+	<Version>1.0</Version>
+	<Link>https://www.nexusmods.com/reddeadredemption2/mods/4688?tab=description</Link>
+	<Metadata/>
+	<Resources>
+		<Resource>
+            <StreamingFiles>stream</StreamingFiles>
+		</Resource>
+	</Resources>
+</EasyInstall>
