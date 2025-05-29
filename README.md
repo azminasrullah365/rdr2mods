@@ -14,10 +14,11 @@
 2. Micah's Hair and Coat [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/1689?tab=description)
 3. Rain Particles [Fix](https://www.nexusmods.com/reddeadredemption2/mods/5452?tab=files)
 4. Vomit [Fix](https://www.nexusmods.com/reddeadredemption2/mods/3912?tab=description)
+5. 
 
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
-2. 
+2. Saint Denis Police Uniform and John's Coat Physics [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/4909?tab=description)
 
 ## Basic Necessary Mods
 1. No Cinematic [Black Bars](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
