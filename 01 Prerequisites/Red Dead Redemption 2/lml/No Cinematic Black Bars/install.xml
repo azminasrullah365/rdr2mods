@@ -1,0 +1,15 @@
+<EasyInstall>
+    <Name>No Black Bars</Name>
+    <Author>xolonlie</Author>
+    <Version>1.0</Version>
+    <Link></Link>
+    <Metadata></Metadata>
+    <Resources>
+        <Resource>        
+            <FileReplacement>
+                <GamePath>update:/x64/data/metadata/cameras.ymt</GamePath>
+                <FilePath>cameras.ymt</FilePath>
+            </FileReplacement>
+        </Resource>
+    </Resources>
+</EasyInstall>
