@@ -28,6 +28,7 @@
 2. Gameplay (Action) [Hotkeys](https://www.nexusmods.com/reddeadredemption2/mods/2559?tab=description). I only use to draw binocular
 3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
 4. [Silent](https://www.nexusmods.com/reddeadredemption2/mods/3073) DedEye
+5. 
 
 ## Basic Necessary Mods
 1. [No](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)  Cinematic Black Bars
@@ -36,3 +37,5 @@
 4. [Smoking](https://www.nexusmods.com/reddeadredemption2/mods/2827?tab=description) Complete
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
 6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip Weapons
+7. [No](https://www.nexusmods.com/reddeadredemption2/mods/1775) Unprovoked Combat Stance
+8. 
