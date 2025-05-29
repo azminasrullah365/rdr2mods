@@ -26,6 +26,7 @@
 11. Fixed Prison Scars [Consistency](https://www.nexusmods.com/reddeadredemption2/mods/4607?tab=description)
 12. Enhanced Entity and World Persistence [Reloaded](https://www.nexusmods.com/reddeadredemption2/mods/5864?tab=description) 1.1
 13. Hovering Gun [Fix](https://www.nexusmods.com/reddeadredemption2/mods/5018?tab=description)
+14. Jailbreak Ped [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4767) 
 
 ## Optionals
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
