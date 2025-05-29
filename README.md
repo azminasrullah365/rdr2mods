@@ -32,4 +32,4 @@
 1. No Cinematic [Black Bars](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
 2. Ingame [Pointer](https://github.com/azminasrullah365/rdr2mods/tree/main/Ingame%20Pointer) 
 3. Walking [Control](https://www.nexusmods.com/reddeadredemption2/mods/2355) Complete
-4. [After Hours]https://www.nexusmods.com/reddeadredemption2/mods/6263() Poker
+4. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
