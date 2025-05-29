@@ -1,0 +1,18 @@
+<EasyInstall>
+    <Name>Traffic and Charle's Bison Fix</Name>
+    <Author>AzmiNasrullah365</Author>
+    <Version>1.0</Version>
+    <Metadata />
+    <Resources>
+        <Resource>
+            <FileReplacement>
+                <GamePath>update:/x64/data/tune/movementtasks.ymt</GamePath>
+                <FilePath>movementtasks.ymt</FilePath>
+            </FileReplacement>
+            <FileReplacement>
+				<GamePath>update:/common/data/persistence_constants.meta</GamePath>
+				<FilePath>persistence_constants.meta</FilePath>
+			</FileReplacement>
+        </Resource>
+    </Resources>
+</EasyInstall>
