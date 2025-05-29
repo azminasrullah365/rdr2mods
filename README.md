@@ -42,8 +42,8 @@
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
 6. [No](https://www.nexusmods.com/reddeadredemption2/mods/1970?tab=description) Horse Dismount Auto Equip Weapons
 7. [No](https://www.nexusmods.com/reddeadredemption2/mods/1775) Unprovoked Combat Stance
-8. Ambient [Cattles and Cowgirls](https://github.com/azminasrullah365/rdr2mods/tree/main/Ambient%20Cattles%20and%20Cowgirls%20Revisioned)
-9. Dirty Union [Suits]([https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description](https://github.com/azminasrullah365/rdr2mods/tree/main/Dirty%20Union%20Suits))
+8. Ambient Cattles and Cowgirls
+9. Dirty Union Suits
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
