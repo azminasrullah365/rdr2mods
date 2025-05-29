@@ -28,7 +28,8 @@
 2. Gameplay (Action) [Hotkeys](https://www.nexusmods.com/reddeadredemption2/mods/2559?tab=description). I only use to draw binocular
 3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
 4. [Silent](https://www.nexusmods.com/reddeadredemption2/mods/3073) DedEye
-5. 
+5. Immersive [Reticle](https://www.nexusmods.com/reddeadredemption2/mods/4739)
+6. 
 
 ## Basic Necessary Mods
 1. [No](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)  Cinematic Black Bars
