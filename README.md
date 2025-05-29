@@ -12,6 +12,7 @@
 ## Basic Necessary Fixes
 1. Maze Sack (Corn Sack) [Fix](https://www.nexusmods.com/reddeadredemption2/mods/1425?tab=description)
 2. Micah's Hair and Coat [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/1689?tab=description)
+3. Rain Particles [Fix](https://www.nexusmods.com/reddeadredemption2/mods/5452?tab=files)
 
 ## Optional Basic Necessary Mods
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
