@@ -47,4 +47,6 @@
 
 ## Ambients Enrichment
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
-2. 
+
+## Replacements
+1. 
