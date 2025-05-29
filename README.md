@@ -32,11 +32,11 @@
 3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
 4. [Silent](https://www.nexusmods.com/reddeadredemption2/mods/3073) DedEye
 5. Immersive [Reticle](https://www.nexusmods.com/reddeadredemption2/mods/4739)
-6. Ingame [Pointer](https://github.com/azminasrullah365/rdr2mods/tree/main/Ingame%20Pointer)
-7. 
+6.  
 
 ## Recommended Basics
-1. No Cinematic Black Bars
+1. Ingame Pointer (Hand Cursor)
+2. No Cinematic Black Bars
 3. [Walking Control](https://www.nexusmods.com/reddeadredemption2/mods/2355) Complete
 4. [Smoking](https://www.nexusmods.com/reddeadredemption2/mods/2827?tab=description) Complete
 5. [After Hours](https://www.nexusmods.com/reddeadredemption2/mods/6263) Poker
