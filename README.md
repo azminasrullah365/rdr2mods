@@ -2,7 +2,7 @@
 # Red Dead Redemption Mods
 
 > I like Vanila with Sprinkles.\
-> Credits goes to each Modder. I just tweaked them to my linkings.\
+> Credits goes to each Modder. I just tweaked them to my linkings.
 
 ## Prerequisites
 1. Lenny's Mod [Loader](https://www.rdr2mods.com/downloads/rdr2/tools/76-lennys-mod-loader-rdr/)
