@@ -10,9 +10,9 @@
 
 ## Basic Necessary Fixes
 1. Maze Sack (Corn Sack) [Fix](https://www.nexusmods.com/reddeadredemption2/mods/1425?tab=description)
-2. Micah's Hair and Coat Fixes [Link]()
+2. Micah's Hair and Coat [Fixes](https://www.nexusmods.com/reddeadredemption2/mods/1689?tab=description)
 
 ## Basic Necessary Mods
-1. No Cinematic Black Bars [Link](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
-2. 
-3. Cursors (Ingame Pointer) [Link](https://github.com/azminasrullah365/rdr2mods/tree/main/Ingame%20Pointer) 
+1. No Cinematic [Black Bars](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
+2. Ingame [Pointer](https://github.com/azminasrullah365/rdr2mods/tree/main/Ingame%20Pointer) 
+3. 
