@@ -5,7 +5,8 @@
 2. Scripthook v2 [Link](https://www.nexusmods.com/reddeadredemption2/mods/1472?tab=description)
 3. ASI Loader [Link](https://www.nexusmods.com/reddeadredemption2/mods/1472?tab=files)
 4. Online Content Unlocker [Link](https://www.nexusmods.com/reddeadredemption2/mods/1688)
-5. Rampage Trainer [Link](https://www.nexusmods.com/reddeadredemption2/mods/233)
+5. Lite Multiplayer Asset Enabler [Link](https://www.nexusmods.com/reddeadredemption2/mods/5304)
+6. Rampage Trainer [Link](https://www.nexusmods.com/reddeadredemption2/mods/233)
 
 ## Basic Necessary Mods
 1. No Cinematic Black Bars [Link](https://github.com/azminasrullah365/rdr2mods/tree/main/No%20Cinematic%20Black%20Bars)
