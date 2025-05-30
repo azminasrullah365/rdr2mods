@@ -62,7 +62,7 @@
 16. 
 
 ## Gameplay Enrichements
-1. [Thirsty Horse](https://www.nexusmods.com/reddeadredemption2/mods/2488?tab=files)
+1. [Thirsty Horse](https://www.nexusmods.com/reddeadredemption2/mods/2488?tab=files) and ThirstyHorse Set [Parameter Adjustments](https://www.nexusmods.com/reddeadredemption2/mods/5078?tab=files)
 2. 
 
 ## Richer Ambients
