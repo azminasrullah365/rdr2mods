@@ -55,8 +55,12 @@
 ## Richer Ambients
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
 2. [Online Wolves](https://www.nexusmods.com/reddeadredemption2/mods/4352) Unlocked for SP
-3. 
-4. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
+3. [Online Panthers](https://www.nexusmods.com/reddeadredemption2/mods/4332) Unlocked for SP
+4. [Online Bison](https://www.nexusmods.com/reddeadredemption2/mods/4355) Unlocked for SP
+5. [Online Bears](https://www.nexusmods.com/reddeadredemption2/mods/4327) Unlocked for SP
+6. [Online Wild Boars](https://www.nexusmods.com/reddeadredemption2/mods/4362) Unlocked for SP
+7. [Online Bucks](https://www.nexusmods.com/reddeadredemption2/mods/4373) Unlocked for SP
+8. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
 
 ## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
