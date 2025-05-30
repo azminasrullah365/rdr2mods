@@ -37,7 +37,10 @@
 4. [Silent](https://www.nexusmods.com/reddeadredemption2/mods/3073) DedEye
 5. Immersive [Reticle](https://www.nexusmods.com/reddeadredemption2/mods/4739)
 6. [Manual](https://www.nexusmods.com/reddeadredemption2/mods/1174?tab=description) Pickup
-7. 
+7. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
+2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
+3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
+4. [Lawmen Model](https://www.nexusmods.com/reddeadredemption2/mods/6245?tab=description) Overhaul
 
 ## Recommended Basics
 1. Ingame Pointer (Hand Cursor)
@@ -77,10 +80,3 @@
 16. Restored Strawberry [Nemesis](https://www.nexusmods.com/reddeadredemption2/mods/6182) Interior
 17. [Banking](https://www.nexusmods.com/reddeadredemption2/mods/228?tab=description). The Old American Art
 18.  
-
-## Recommended Replacements
-1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
-2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
-3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
-4. [Lawmen Model](https://www.nexusmods.com/reddeadredemption2/mods/6245?tab=description) Overhaul
-5. 
