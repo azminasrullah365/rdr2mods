@@ -36,7 +36,8 @@
 3. Red Dead [Free Cam](https://www.nexusmods.com/reddeadredemption2/mods/60)
 4. [Silent](https://www.nexusmods.com/reddeadredemption2/mods/3073) DedEye
 5. Immersive [Reticle](https://www.nexusmods.com/reddeadredemption2/mods/4739)
-6.  
+6. [Manual](https://www.nexusmods.com/reddeadredemption2/mods/1174?tab=description) Pickup
+7. 
 
 ## Recommended Basics
 1. Ingame Pointer (Hand Cursor)
