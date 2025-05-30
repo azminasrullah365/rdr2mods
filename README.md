@@ -41,7 +41,8 @@
 2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
 3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
 4. [Lawmen Model](https://www.nexusmods.com/reddeadredemption2/mods/6245?tab=description) Overhaul
-5. 
+5. Realistic Weapon [Audio Overhaul](https://www.nexusmods.com/reddeadredemption2/mods/2848?tab=description) (RWAO)
+6. 
 
 ## Recommended Basics
 1. Ingame Pointer (Hand Cursor)
