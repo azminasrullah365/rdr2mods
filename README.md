@@ -62,6 +62,8 @@
 14. [Non Sticky](https://www.nexusmods.com/reddeadredemption2/mods/263?tab=description) Hats
 15. Rededrunk's [Ambient World](https://www.nexusmods.com/reddeadredemption2/mods/5968?tab=files&file_id=20513) - BETA
 16. Just [Bleed](https://www.nexusmods.com/reddeadredemption2/mods/1934?tab=description) Already
+17. Realistic [Accuracy](https://www.nexusmods.com/reddeadredemption2/mods/3356?tab=files)
+18. 
 
 ## Gameplay Enrichements
 1. [Thirsty Horse](https://www.nexusmods.com/reddeadredemption2/mods/2488?tab=files) and ThirstyHorse Set [Parameter Adjustments](https://www.nexusmods.com/reddeadredemption2/mods/5078?tab=files)
