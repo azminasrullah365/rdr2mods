@@ -67,9 +67,12 @@
 12. Cut Content [Deer](https://www.nexusmods.com/reddeadredemption2/mods/4448) Unlocked for SP
 13. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
 14. [Strawberry Hotel and Saloon](https://www.nexusmods.com/reddeadredemption2/mods/6144) Interior
+15. [Strawberry Doctor's Office](https://www.nexusmods.com/reddeadredemption2/mods/1454) Interior
+16. 
 
 ## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
 2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
 3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
-4. 
+4. [Lawmen Model](https://www.nexusmods.com/reddeadredemption2/mods/6245?tab=description) Overhaul
+5. 
