@@ -52,12 +52,14 @@
 12. Brighter Day and Darker Night
 13. 
 
-## Ambients Enrichment
+## Richer Ambients
 1. Legendary Channel Catfish [Restored](https://www.nexusmods.com/reddeadredemption2/mods/4457?tab=description)
-2. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
+2. [Online Wolves](https://www.nexusmods.com/reddeadredemption2/mods/4352) Unlocked for SP
 3. 
+4. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
 
-## Optional Replacements
+## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
 2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
-3. 
+3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
+4. 
