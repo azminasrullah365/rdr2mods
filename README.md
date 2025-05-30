@@ -29,7 +29,8 @@
 14. Jailbreak Ped [Fix](https://www.nexusmods.com/reddeadredemption2/mods/4767)
 15. Traffic and Charles's Bison Fix
 16. Realistic [Accuracy](https://www.nexusmods.com/reddeadredemption2/mods/3356?tab=files)
-17. 
+17. [Saddle](https://www.nexusmods.com/reddeadredemption2/mods/4758) Fixes
+18. 
 
 ## Optionals
 1. [Unlock](https://www.nexusmods.com/reddeadredemption2/mods/4016?tab=description) that Stable
