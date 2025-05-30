@@ -66,7 +66,7 @@
 11. Cut Content [Dogs](https://www.nexusmods.com/reddeadredemption2/mods/4422) Unlocked for SP
 12. Cut Content [Deer](https://www.nexusmods.com/reddeadredemption2/mods/4448) Unlocked for SP
 13. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
-14. 
+14. [Strawberry Hotel and Saloon](https://www.nexusmods.com/reddeadredemption2/mods/6144) Interior
 
 ## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
