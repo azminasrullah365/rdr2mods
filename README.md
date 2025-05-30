@@ -41,6 +41,7 @@
 2. [Zebra](https://www.nexusmods.com/reddeadredemption2/mods/1723?tab=description)
 3. [Mexico](https://www.nexusmods.com/reddeadredemption2/mods/3505?tab=description) on Minimap
 4. [Lawmen Model](https://www.nexusmods.com/reddeadredemption2/mods/6245?tab=description) Overhaul
+5. 
 
 ## Recommended Basics
 1. Ingame Pointer (Hand Cursor)
@@ -59,7 +60,6 @@
 14. [Non Sticky](https://www.nexusmods.com/reddeadredemption2/mods/263?tab=description) Hats
 15. Rededrunk's [Ambient World](https://www.nexusmods.com/reddeadredemption2/mods/5968?tab=files&file_id=20513) - BETA
 16. 
-17. 
 
 ## Gameplay Enrichements
 1. [Thirsty Horse](https://www.nexusmods.com/reddeadredemption2/mods/2488?tab=files)
