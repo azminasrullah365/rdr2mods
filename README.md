@@ -60,7 +60,13 @@
 5. [Online Bears](https://www.nexusmods.com/reddeadredemption2/mods/4327) Unlocked for SP
 6. [Online Wild Boars](https://www.nexusmods.com/reddeadredemption2/mods/4362) Unlocked for SP
 7. [Online Bucks](https://www.nexusmods.com/reddeadredemption2/mods/4373) Unlocked for SP
-8. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
+8. [Online Foxes](https://www.nexusmods.com/reddeadredemption2/mods/4359) Unlocked for SP
+9. [Online Cougars](https://www.nexusmods.com/reddeadredemption2/mods/4395) Unlocked for SP
+10. [Online Coyotes](https://www.nexusmods.com/reddeadredemption2/mods/4379) Unlocked for SP
+11. Cut Content [Dogs](https://www.nexusmods.com/reddeadredemption2/mods/4422) Unlocked for SP
+12. Cut Content [Deer](https://www.nexusmods.com/reddeadredemption2/mods/4448) Unlocked for SP
+13. Annesburg Saloon [Interior](https://www.nexusmods.com/reddeadredemption2/mods/2951)
+14. 
 
 ## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
