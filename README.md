@@ -75,7 +75,8 @@
 15. [Strawberry Doctor's Office](https://www.nexusmods.com/reddeadredemption2/mods/1454) Interior
 16. Restored Strawberry [Nemesis](https://www.nexusmods.com/reddeadredemption2/mods/6182) Interior
 17. [Banking](https://www.nexusmods.com/reddeadredemption2/mods/228?tab=description). The Old American Art
-18. 
+18. Ambient Abandoned [Wagons](https://www.nexusmods.com/reddeadredemption2/mods/6366?tab=description)
+19. 
 
 ## Recommended Replacements
 1. [Clothing and Accessory](https://www.nexusmods.com/reddeadredemption2/mods/570?tab=description) Textures
