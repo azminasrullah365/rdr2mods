@@ -1,0 +1,354 @@
+<Map>
+	<Ped>
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1772.7815" y="-367.5708" z="155.9861" />
+		<Yaw value="140.67149" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_LEAN_BACK_WALL" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 1 Seat 1-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1772.0223" y="-369.61201" z="156.4581" />
+		<Yaw value="98.7854" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_WHITTLE" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 1 Seat 2-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1773.7349" y="-368.14039" z="156.45799" />
+		<Yaw value="-166.8824" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 1 Seat 3-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1773.189" y="-371.11821" z="156.4577" />
+		<Yaw value="35.1166" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_SMOKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 2 Seat 1-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1774.757" y="-373.36929" z="156.4386" />
+		<Yaw value="27.172199" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 2 Seat 2-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1776.8994" y="-372.33341" z="156.45779" />
+		<Yaw value="-150.0656" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 2 Seat 3-->
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1777.4234" y="-374.52429" z="156.4178" />
+		<Yaw value="-29.000299" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 3 Seat 1-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1770.8857" y="-375.4639" z="156.478" />
+		<Yaw value="87.191002" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 3 Seat 2-->
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1773.7442" y="-375.0054" z="156.4774" />
+		<Yaw value="-97.840897" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Table 3 Seat 3-->
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1771.7953" y="-376.75509" z="156.4776" />
+		<Yaw value="39.719299" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_SMOKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_bivroughtravellers_01" />
+		<Position x="-1775.947" y="-374.96161" z="156.0022" />
+		<Yaw value="15.1585" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_DRINKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1776.5536" y="-365.34909" z="155.9624" />
+		<Yaw value="177.4541" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_DRINKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1775.9468" y="-365.99731" z="155.9649" />
+		<Yaw value="112.4534" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_DRINKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1775.5601" y="-367.76541" z="155.9635" />
+		<Yaw value="-127.2028" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_LEAN_BACK_WALL_DRINKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1774.8806" y="-367.44919" z="155.96249" />
+		<Yaw value="165.797" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_DRINKING" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1773.7483" y="-377.14081" z="156.0106" />
+		<Yaw value="-33.4869" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_LEAN_BARREL" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strlaborer_01" />
+		<Position x="-1780.4376" y="-370.20419" z="155.9704" />
+		<Yaw value="-42.4188" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_BAR_DRINK_BARTENDER" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped> <!--Piano Player-->
+		<Model value="null" />
+		<Position x="-1778.5923" y="-372.11151" z="154.8075" />
+		<Yaw value="143.9991" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_ABIGAIL_PIANO" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_f_m_strtownfolk_01" />
+		<Position x="-1775.6948" y="-371.9462" z="158.9101" />
+		<Yaw value="150.9991" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_SHOPKEEPER" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strfancytourist_01" />
+		<Position x="-1781.5989" y="-369.96419" z="159.35291" />
+		<Yaw value="-88.071999" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_CHAIR_READ_NEWSPAPER" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strtownfolk_01" />
+		<Position x="-1772.2727" y="-378.02731" z="159.3656" />
+		<Yaw value="47.999901" />
+		<Loadout value="" />
+		<Scenario value="PROP_HUMAN_SEAT_BENCH_PORCH" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+	<Ped>
+		<Model value="a_m_m_strtownfolk_01" />
+		<Position x="-1774.7007" y="-376.7637" z="158.9104" />
+		<Yaw value="140.9993" />
+		<Loadout value="" />
+		<Scenario value="WORLD_HUMAN_STARE_STOIC" />
+		<CanFlee value="true" />
+		<Schedule>
+			<Item type="">
+				<StartTime value="0" />
+				<EndTime value="0" />
+				<Position x="0.0" y="0.0" z="0.0" />
+				<Yaw value="0.0" />
+			</Item>
+		</Schedule>
+	</Ped>
+</Map>
