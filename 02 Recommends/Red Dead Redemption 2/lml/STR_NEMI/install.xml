@@ -1,0 +1,17 @@
+<EasyInstall>
+    <Name>Strawberry Nemesis Interior</Name>
+    <Author>pariah87</Author>
+    <Version>1.0</Version>
+    <Link></Link>
+    <Metadata>
+    </Metadata>
+	<Resources>
+    <Resource>
+	<StreamingFiles>Files</StreamingFiles>
+	   <FileReplacement>
+          	<GamePath>dlc_patchpack006:/x64/levels/rdr3/area/nopq_03_06/nopq_3_6_area_lod_combine_collision/nopq_3_6_area_lod_combine_collision_1.ybn</GamePath>
+          	<FilePath>YBN/nopq_3_6_area_lod_combine_collision_1.ybn</FilePath>
+	   </FileReplacement>
+        </Resource>
+    </Resources>
+</EasyInstall>

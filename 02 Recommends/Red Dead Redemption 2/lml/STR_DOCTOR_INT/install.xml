@@ -1,0 +1,11 @@
+<EasyInstall>
+    <Name>Strawberry Doctor's Interior</Name>
+    <Author>pariah87</Author>
+    <Version>1.1</Version>
+	 <Resources>
+	  <Resource>
+	   <StreamingFiles>Files</StreamingFiles>
+       <DataFile type="LML_RPF_MANIFEST">_manifest_doc87.ymf</DataFile>
+      </Resource>
+     </Resources>
+</EasyInstall>

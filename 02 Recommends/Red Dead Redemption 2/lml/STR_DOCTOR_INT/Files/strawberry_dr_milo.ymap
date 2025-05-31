@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>strawberry_dr_milo</name>
+  <parent>strawberry_dr_milo_lod</parent>
+  <flags value="1"/>
+  <contentFlags value="73"/>
+  <streamingExtentsMin x="-2055.00000000" y="-682.00000000" z="-90.00999000"/>
+  <streamingExtentsMax x="-1555.00000000" y="-182.00000000" z="409.99000000"/>
+  <entitiesExtentsMin x="-1810.63100000" y="-437.66090000" z="157.60110000"/>
+  <entitiesExtentsMax x="-1800.90100000" y="-427.06810000" z="163.54780000"/>
+  <entities>
+    <Item type="CMloInstanceDef">
+      <archetypeName>str_doctor_int</archetypeName>
+      <flags value="1572872"/>
+      <id value="0x492FA8669F95D0E8"/>
+      <position x="-1805.00000000" y="-432.00000000" z="159.99000000"/>
+      <rotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="0"/>
+      <lodDist value="80.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <UNK_MEMBER_0xFFEC781A value="0"/>
+      <tintValue value="0"/>
+      <UNK_MEMBER_0x0DC5F270 value="255"/>
+      <UNK_MEMBER_0x540CA436 value="255"/>
+      <groupId>0xA00FBCC5</groupId>
+      <floorId value="0"/>
+      <defaultEntitySets/>
+      <numExitPortals value="4"/>
+      <MLOInstflags value="8"/>
+      <UNK_MEMBER_0x15810E7F value="250.00000000"/>
+    </Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries>
+    <Item>str_doctor_int</Item>
+  </physicsDictionaries>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <UNK_MEMBER_0x8471928B/>
+  <UNK_MEMBER_0x4D4A0635/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+    <UNK_MEMBER_0xFFD167D6/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <UNK_MEMBER_0x94720DEC/>
+    <intensity/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+    <UNK_MEMBER_0xFFEC781A/>
+    <hash/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name/>
+    <exportedBy/>
+    <owner/>
+    <time/>
+  </block>
+</CMapData>

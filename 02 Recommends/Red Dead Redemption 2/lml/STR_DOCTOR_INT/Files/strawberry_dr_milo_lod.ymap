@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>strawberry_dr_milo_lod</name>
+  <parent/>
+  <flags value="2"/>
+  <contentFlags value="2"/>
+  <streamingExtentsMin x="-2055.77900000" y="-682.33280000" z="-92.39891000"/>
+  <streamingExtentsMax x="-1555.77900000" y="-182.33280000" z="407.60110000"/>
+  <entitiesExtentsMin x="-1810.60300000" y="-437.63580000" z="157.79580000"/>
+  <entitiesExtentsMax x="-1800.90700000" y="-427.07290000" z="163.47060000"/>
+  <entities>
+    <Item type="CEntityDef">
+      <archetypeName>str_doc_int_lod</archetypeName>
+      <flags value="1572928"/>
+      <id value="0x4559A4034A787A72"/>
+      <position x="-1805.77900000" y="-432.33270000" z="157.60110000"/>
+      <rotation x="0.00000000" y="0.00000000" z="0.97616340" w="-0.21703710"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="250.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_LOD</lodLevel>
+      <numChildren value="1"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <UNK_MEMBER_0xFFEC781A value="0"/>
+      <tintValue value="0"/>
+      <UNK_MEMBER_0x0DC5F270 value="255"/>
+      <UNK_MEMBER_0x540CA436 value="255"/>
+    </Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries/>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <UNK_MEMBER_0x8471928B/>
+  <UNK_MEMBER_0x4D4A0635/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+    <UNK_MEMBER_0xFFD167D6/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <UNK_MEMBER_0x94720DEC/>
+    <intensity/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+    <UNK_MEMBER_0xFFEC781A/>
+    <hash/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name/>
+    <exportedBy/>
+    <owner/>
+    <time/>
+  </block>
+</CMapData>
