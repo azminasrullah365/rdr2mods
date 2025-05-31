@@ -1,0 +1,4345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionResponseData>
+	<InteractionResponses>
+	
+		<!-- AGGRESSIVE FEMALE response to player -->
+		<Item key="AggressiveFemaleResponseToPlayer">
+		
+			<Flags>ProcessLeader IsDispute ForceDefuse DisableLookAt</Flags>
+			
+			<!-- No TalkResponse here so player can Insult or Defuse by default -->
+			
+			<States>
+			
+				<!-- STATE: Start -->
+				<Item key="Start">
+					<Flags>InitialState</Flags>
+					<Action type="CInteractionActionAddCustomWeaponAnimStreamingRequest">
+						<OverrideFilter>
+							<Intensity>Zero</Intensity>
+						</OverrideFilter>
+						<UseMagicExpectedWeapon value="true" />
+						<Time value="30" />
+					</Action>
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>IgnoreDueToAnger</Item>
+						<Item>HandleSwimming</Item>
+						<Item>ReactLookDueToScenario</Item>
+						<Item>ToSelectInitialReaction</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: SelectInitialReaction -->
+				<Item key="SelectInitialReaction">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionIsDrivingVehicle"/>
+								<Action type="CInteractionActionStopVehicle"/>
+							</Action>
+							<Action type="CInteractionActionNotifyAudioEscalation">
+								<Level value="1"/>
+							</Action>
+						</Actions>
+					</Action>
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<!-- Do not increment the ambient dispute counter for registered guards -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionHasGuardZone" />
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ALLOW_DISPUTE_INCREMENT</Name>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionIncrementDisputeCounter"/>
+						</Item>
+					</ConditionalActions>
+					<!-- Order these in most->least offensive -->
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToPropertyAttacked</Item>
+						<Item>AngerDueToTerritoryIntrudedPostWarning</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToInterveneForHitWoman</Item>
+						<Item>AngerDueToEscalatedIntervene</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToLoiteringClose</Item>
+						<Item>AngerDueToStaring</Item>
+						<Item>AngerDueGreetPostReject</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocation</Item>
+						<Item>HandleEvaluate</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: Evaluate -->
+				<Item key="Evaluate">
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<!-- Do not increment the ambient dispute counter for registered guards -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionHasGuardZone" />
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ALLOW_DISPUTE_INCREMENT</Name>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionIncrementDisputeCounter"/>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>StartStealVehicleInteraction</Item>
+						<Item>StartVehicleRobbery</Item>
+						<Item>StartGunslingerDuel</Item>
+						<Item>StartRobbery</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>FightDueToAnger</Item>
+						<Item>StartStopVehicleInteraction</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>FinishDueToAgitatorNotInteracting</Item>
+						<Item>HelpLeader</Item>
+						<Item>FightDueToSwimming</Item>
+						<Item>AimDueToAnger</Item>
+						<Item>AimDueToConfrontApproachFail</Item>
+						<Item>FearDueToFleeing</Item>
+						<Item>WalkAwayDueToAnger</Item>
+						<Item>ConfrontDueToAnger</Item>
+						<Item>ChallengeDueToAnger</Item>
+						<Item>ReactDueToFollowing</Item>
+						<Item>FaceLevelOneDueToAnger</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: SelectScenarioReactLook -->
+				<Item key="SelectScenarioReactLook">
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>MedReactLook</Item>
+						<Item>LowReactLook</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: ScenarioReactLook -->
+				<Item key="ScenarioReactLook">
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>SelectInitialReactionDueToFacing</Item>
+						<Item>SelectInitialReactionDueToIntroCompleted</Item>
+						<Item>SelectInitialReactionDueToReactionFailed</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: WaitForResponseToMinorInteraction -->
+				<Item key="WaitForResponseToMinorInteraction">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionRequestEmotionalLoco">
+								<TimeToLiveMilliSeconds value="10000"/>
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+								<bSetReactionWindow value="false"/>
+							</Action>
+							<Action type="CInteractionActionSetSimplePerPlayerMemory">
+								<MemoryType>MinorPlayerOffense</MemoryType>
+							</Action>
+						</Actions>
+					</Action>
+					
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>StartStopVehicleInteraction</Item>
+						<Item>StartStealVehicleInteraction</Item>
+						<Item>StartVehicleRobbery</Item>
+						<Item>StartRobbery</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>StartJackConfrontInteraction</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>ResumeActivityDueToDistance</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>FinishDueToAgitatorNotInteracting</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuse</Item>
+						<Item>FinishDueToTimeoutAfterMinorInteraction</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+						<Item>FinishDueToPlayerHolstered</Item>
+						<Item>VictoryDueToAgitatorNotInteractingAfterToldToStop</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: FaceLevelOne -->
+				<Item key="FaceLevelOne">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CInteractionConditionIsLastInteractionAppliedAMinorOffense"/>
+								<Action type="CInteractionActionSetSimplePerPlayerMemory">
+									<MemoryType>MinorPlayerOffense</MemoryType>
+								</Action>
+							</Action>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CInteractionConditionIsLastInteractionApplied">
+									<InteractionType>IT_TerritoryIntruded</InteractionType>
+								</Condition>
+								<Action type="CInteractionActionSetSimplePerPlayerMemory">
+									<MemoryType>WarnedPlayerToLeave</MemoryType>
+								</Action>
+							</Action>
+						</Actions>
+					</Action>
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionInSameInterior"/>
+									</Condition>
+									<!-- CASE: Ped not in scenario -->
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CAIConditionNot">
+												<Condition type="CAIConditionArePedConfigFlagsSet">
+													<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+												</Condition>
+											</Condition>
+											<Condition type="CAIConditionIsExitingScenario"/>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableIntimidate value="true"/>
+								<DontIdleAtStartIfOutsideTargetRadius value="true"/>
+							</Action>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsReactingToTarget"/>
+							</Condition>
+							<Action type="CInteractionActionReact">
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>StartStopVehicleInteraction</Item>
+						<Item>StartStealVehicleInteraction</Item>
+						<Item>StartVehicleRobbery</Item>
+						<Item>StartRobbery</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>ResumeActivityDueToDistance</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>FinishDueToAgitatorNotInteracting</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToPropertyAttacked</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocation</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuse</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+						<Item>FinishDueToPlayerHolstered</Item>
+						<Item>VictoryDueToAgitatorNotInteractingAfterToldToStop</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: Challenge -->
+				<Item key="Challenge">
+					<Action type="CInteractionActionConditional">
+						<Condition type="CInteractionConditionIsLastInteractionApplied">
+							<InteractionType>IT_TerritoryIntruded</InteractionType>
+						</Condition>
+						<Action type="CInteractionActionSetSimplePerPlayerMemory">
+							<MemoryType>WarnedPlayerToLeave</MemoryType>
+						</Action>
+					</Action>
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<!-- CASE: Ped in scenario -->
+									<Condition type="CAIConditionArePedConfigFlagsSet">
+										<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionIsExitingScenario"/>
+									</Condition>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_Rob</InteractionType>
+										<InteractionSpeechType>Robbery</InteractionSpeechType>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<!-- Play scenario breakout anim -->
+							<Action type="CInteractionActionMulti">
+								<Actions>
+									<Action type="CInteractionActionRequestEmotionalLoco">
+										<TimeToLiveMilliSeconds value="10000"/>
+										<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+										<RequestPriority>eMed</RequestPriority>
+										<bSetReactionWindow value="true"/>
+									</Action>
+									<Action type="CInteractionActionConfront">
+										<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+									</Action>
+								</Actions>
+							</Action>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsPedArmed"/>
+									<Condition type="CAIConditionCanFight" />
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<InteractionType>IT_TerritoryIntruded</InteractionType>
+											</Condition>
+											<Condition type="CAIConditionIsTargetInOurTerritory"/>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							
+							<Action type="CInteractionActionMulti">
+								<Actions>
+									<Action type="CInteractionActionRequestEmotionalLoco">
+										<TimeToLiveMilliSeconds value="10000"/>
+										<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+										<RequestPriority>eMed</RequestPriority>
+										<bSetReactionWindow value="true"/>
+									</Action>
+									<Action type="CInteractionActionConfront">
+										<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+									</Action>
+								</Actions>
+							</Action>
+						</Item>
+						<!-- Territory Intruded Dispute, make sure to face the player and break out of any scenario-->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_TerritoryIntruded</InteractionType>
+									</Condition>
+									<Condition type="CAIConditionIsTargetInOurTerritory"/>
+								</Conditions>
+							</Condition>
+							
+							<Action type="CInteractionActionMulti">
+								<Actions>
+									<Action type="CInteractionActionRequestEmotionalLoco">
+										<TimeToLiveMilliSeconds value="10000"/>
+										<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+										<RequestPriority>eMed</RequestPriority>
+										<bSetReactionWindow value="true"/>
+									</Action>
+									<Action type="CInteractionActionFace"/>
+								</Actions>
+							</Action>
+						</Item>
+						<Item>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_Intervene</InteractionType>
+							</Condition>
+							
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableIntimidate value="true"/>
+							</Action>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionInSameInterior"/>
+									</Condition>
+									<!-- CASE: Ped not in scenario -->
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CAIConditionNot">
+												<Condition type="CAIConditionArePedConfigFlagsSet">
+													<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+												</Condition>
+											</Condition>
+											<Condition type="CAIConditionIsExitingScenario"/>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableIntimidate value="true"/>
+								<DontIdleAtStartIfOutsideTargetRadius value="true"/>
+							</Action>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsReactingToTarget"/>
+							</Condition>
+							<Action type="CInteractionActionReact">
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<!-- THIS REACTION LIST # CAN NOT EXCEED 32!! -->
+					<!-- MERGE REACTIONS WHEN POSSIBLE -->
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>FightDueToHostility</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>FinishDueToAgitatorNotInteracting</Item>
+						<Item>HelpLeader</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicleWhileConfrontOrChallenge</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistance</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToPropertyAttacked</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringAfterInsultOrRob</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocation</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuse</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+						<Item>FinishDueToPlayerHolstered</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: ConfrontStart -->
+				<Item key="ConfrontStart">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionRequestEmotionalLoco">
+								<TimeToLiveMilliSeconds value="10000"/>
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+							<Action type="CInteractionActionNotifyAudioEscalation">
+								<Level value="3"/>
+							</Action>
+							<Action type="CInteractionActionSetSimplePerPlayerMemory">
+								<MemoryType>ChallengeThreatened</MemoryType>
+							</Action>
+						</Actions>
+					</Action>
+					<ConditionalActions>
+						<Item>
+							<!-- If we are armed or in someway more aggressive -->
+							<Condition type="CAIConditionReferenced">
+								<Name>SHOULD_USE_AGGRESSIVE_WEAPON_ACTIONS</Name>
+							</Condition>
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableMovement value="true"/>
+								<UseRandomWeaponAction value="true"/><!-- This means aim, draw, or intimidate -->
+							</Action>
+						</Item>
+						<Item>
+							<!-- Player armed -->
+							<Condition type="CInteractionConditionIsPedArmed"/>
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableMovement value="true"/>
+								<UseRandomWeaponAction value="true"/>
+							</Action>
+						</Item>
+						<!-- Player not on foot -->
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionIsOnFoot">
+									<Ped>SecondaryEntity</Ped>
+								</Condition>
+							</Condition>
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+								<DisableIntimidate value="true"/>
+								<AllowSpeedAdjustment value="true"/>
+							</Action>
+						</Item>
+						<!-- Rejected robbery attempt (and failed above conditions); disable shoving -->
+						<Item>
+							<Condition type="CAIConditionPedHasRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<SourcePed>SecondaryEntity</SourcePed>
+							</Condition>		
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<DisableShoving value="true"/>
+							</Action>
+						</Item>
+						<Item>
+							<!-- DEFAULT -->
+							<Action type="CInteractionActionConfront">
+								<ScenarioExit>ScenarioExit_Aggro</ScenarioExit>
+								<ShoveDialogue>CHALLENGE_THREATEN</ShoveDialogue>
+								<AllowSpeedAdjustment value="true"/>
+								<ChanceToEscalate value="1.0f"/>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>FightDueToSwimming</Item>
+						<Item>ConfrontStartToConfrontInProgress</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicleWhileConfrontOrChallenge</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAtDuringConfront</Item>
+						<Item>AngerDueToConfrontEscalation</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistanceEscalated</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuseEscalated</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+						<Item>EvaluateDueToTimeout</Item>
+						<Item>FinishDueToPlayerHolstered</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: ConfrontInProgress -->
+				<Item key="ConfrontInProgress">
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>HelpLeader</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicleWhileConfrontOrChallenge</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAtDuringConfront</Item>
+						<Item>AngerDueToConfrontEscalation</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistanceEscalated</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocationDuringConfront</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuseEscalated</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+						<Item>FinishDueToPlayerHolstered</Item>
+						<Item>EvaluateDueToConfrontApproachFail</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: WaitBeforeFinish -->
+				<Item key="WaitBeforeFinish">
+					<!-- Order these in most->least offensive -->
+					<Reactions>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToLoiteringClose</Item>
+						<Item>AngerDueToStaring</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						
+						<Item>FleeDueToWonWitnessDispute</Item>
+						<Item>FinishDueToDefuse</Item>
+						<Item>FinishDueToTimeoutAfterUnholster</Item>
+					</Reactions>
+					<TimeToListen value="0.0"/>
+				</Item>
+				
+				<!-- STATE: AimStart -->
+				<Item key="AimStart">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionPointWeapon">
+								<StyleMod>CombatStartNoThreat</StyleMod>
+								<LingerModTimeMS value="2000" />
+							</Action>
+							<Action type="CInteractionActionSetSimplePerPlayerMemory">
+								<MemoryType>ChallengeThreatened</MemoryType>
+							</Action>
+						</Actions>
+					</Action>
+					
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>FightDueToSwimming</Item>
+						<Item>AimStartDueToAimInProgress</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>HelpLeader</Item>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAtDuringConfront</Item>
+						<Item>AngerDueToConfrontEscalation</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistanceEscalated</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuseEscalated</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: AimInProgress -->
+				<Item key="AimInProgress">
+					<Reactions>
+						<Item>LeaveDisputeDueToEventPriorities</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>HelpLeader</Item>
+						<Item>BackToWitnessFromAimedOrGrapple</Item>
+						<Item>HandleGrappled</Item>
+						<Item>HandleLassoed</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAtDuringConfront</Item>
+						<Item>AngerDueToConfrontEscalation</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistanceEscalated</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocationDuringConfront</Item>
+						
+						<Item>WaitDueToDefuseAttemptInTerritory</Item>
+						<Item>FinishDueToDefuseEscalated</Item>
+						<Item>RemainDueToFailedDefuse</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: FightStart -->
+				<Item key="FightStart">
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionRequestEmotionalLoco">
+								<TimeToLiveMilliSeconds value="10000"/>
+								<EmotionalPreset>Interaction_Angry</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+							<Action type="CInteractionActionNotifyAudioEscalation">
+								<Level value="4"/>
+							</Action>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+							<Action type="CInteractionSetShouldEscapeNowFromGrapple">
+								<!-- KillParentFleeTaskOnGrappleExit needs to be true in case the grapple task has a parent flee task (ie when the player is attempting an intimidation grapple) -->
+								<KillParentFleeTaskOnGrappleExit value="true"/>
+							</Action>
+							<Action type="CInteractionActionStopWitness"/>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionNot">
+									<!-- Do not increment the ambient dispute counter for registered guards -->
+									<Condition type="CAIConditionHasGuardZone" />
+								</Condition>
+								<!-- Default case to get a crime generated, if above action passes then we will fail in the interaction action so its safe to call like this -->
+								<Action type="CInteractionActionIncrementDisputeCounter"/>
+							</Action>
+						</Actions>
+					</Action>
+					<ConditionalActions>
+						<!-- Do nothing if the ped already has a pending action to fight-->
+						<Item>
+							<Condition type="CInteractionConditionHasPendingAction">
+								<Action>CInteractionActionFight</Action>
+							</Condition>
+							<Action type="NULL"/>
+						</Item>
+						<!-- standard fight, no restrictions placed on weapons from the interaction -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_FIGHT_NO_RESTRICTIONS</Name>
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>SHOULD_USE_AGGRESSIVE_WEAPON_ACTIONS</Name>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFight" >
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+							</Action>
+						</Item>
+						<Item>
+							<!-- Fight unarmed by default -->
+							<Action type="CInteractionActionFight">
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+								<FightUnarmed value="true"/>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>FightStartToFightInProgress</Item>
+						<Item>AbortFightDueToFleeing</Item>
+						<Item>EvaluateDueToTimeout</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: FightInProgress -->
+				<Item key="FightInProgress">
+					<Reactions>
+						<Item>FinishDueToFlee</Item>
+						<Item>VictoryDueToEnd</Item>
+						<Item>FinishDueToEnd</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WonDispute -->
+				<Item key="WonDispute">
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionIsInAVehicle" />
+						</Item>
+						<Item>
+							<Condition type="CAIConditionReferenced">
+								<Name>IN_WITNESS_INTERACTION</Name>
+							</Condition>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- Ped not in scenario -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionArePedConfigFlagsSet">
+											<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+										</Condition>
+									</Condition>
+									<!-- Ped exiting scenario -->
+									<Condition type="CAIConditionIsExitingScenario"/>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFace" />
+						</Item>
+					</ConditionalActions>
+					<Flags>ClearHostility</Flags>
+					<!-- If the agitator does something else before the interaction ends, resume the dispute -->
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToVehicleRobbery</Item>
+						<Item>AngerDueToRobberyGrappled</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessGrapple</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocation</Item>
+						<Item>WatchAgitatorDueToIntervene</Item>
+						<Item>FleeDueToWonWitnessDispute</Item>
+						<Item>FinishDueToTimeout</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WonFight -->
+				<Item key="WonFight">
+					<Flags>ClearHostility</Flags>
+					<Reactions>
+						<Item>WonFightDueToAgitatorFlee</Item>
+						<Item>WonFightDueToAgitatorKilled</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitForRobberySpeech -->
+				<Item key="WaitForRobberySpeech">
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>EvaluateDueToRobberySpeechEnded</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitForGrappleToFinishBeforeFight -->
+				<Item key="WaitForGrappleToFinishBeforeFight">
+					<ConditionalActions>
+						<!-- standard fight, no restrictions placed on weapons from the interaction -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsPedArmed"/>
+									<Condition type="CInteractionConditionIsPedArmed">
+										<Ped>PrimaryEntity</Ped>
+									</Condition>
+									<Condition type="CAIConditionIsTaskRunning">
+										<TaskHash>TASK_GUNSLINGER_DUEL</TaskHash>
+										<Ped>SecondaryEntity</Ped>
+									</Condition>
+									<!-- Player in a boat -->
+									<Condition type="CAIConditionIsPedInBoat">
+										<Ped>SecondaryEntity</Ped>
+									</Condition>
+									<!-- We somehow ended up in the water -->
+									<Condition type="CAIConditionIsSwimming" />
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFight" >
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+							</Action>
+						</Item>
+						<Item>
+							<!-- Fight unarmed by default -->
+							<Action type="CInteractionActionFight">
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+								<FightUnarmed value="true"/>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>StartRobberyFromAimOrGrapple</Item>
+						<Item>BreakoutOfGrappledDueToFailedRobbery</Item>
+						<Item>BreakoutOfGrappledDueToFailedWitness</Item>
+						<Item>FightDueToReleased</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitForLassoToFinishBeforeFight -->
+				<Item key="WaitForLassoToFinishBeforeFight">
+					<ConditionalActions>
+						<!-- standard fight, no restrictions placed on weapons from the interaction -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsPedArmed"/>
+									<Condition type="CInteractionConditionIsPedArmed">
+										<Ped>PrimaryEntity</Ped>
+									</Condition>
+									<Condition type="CAIConditionIsTaskRunning">
+										<TaskHash>TASK_GUNSLINGER_DUEL</TaskHash>
+										<Ped>SecondaryEntity</Ped>
+									</Condition>
+									<!-- Player in a boat -->
+									<Condition type="CAIConditionIsPedInBoat">
+										<Ped>SecondaryEntity</Ped>
+									</Condition>
+									<!-- We somehow ended up in the water -->
+									<Condition type="CAIConditionIsSwimming" />
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFight" >
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+							</Action>
+						</Item>
+						<Item>
+							<!-- Fight unarmed by default -->
+							<Action type="CInteractionActionFight">
+								<ScenarioExit>ScenarioExit_Combat</ScenarioExit>
+								<FightUnarmed value="true"/>
+							</Action>
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>FightDueToReleased</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitForGrappleBreakoutBeforeFight -->
+				<Item key="WaitForGrappleBreakoutBeforeFight">
+					<Reactions>
+						<Item>FightDueToReleased</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitForAudioBeforeFight -->
+				<Item key="WaitForAudioBeforeFight">
+					<Reactions>
+						<Item>FightDueToAudioHasFinished</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: HelpWithConfront -->
+				<Item key="HelpWithConfront">
+					<Action type="CInteractionActionChangeResponse">
+						<Response>HelpWithConfrontResponse</Response>
+					</Action>
+				</Item>
+				
+				<!-- STATE: WaitToRespondToDefuse -->
+				<Item key="WaitToRespondToDefuse">
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionIsOnFoot"/>
+							</Condition>
+							<!-- Don't re-task while on a mount/vehicle here -->
+						</Item>
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- Ped not in scenario -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionArePedConfigFlagsSet">
+											<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+										</Condition>
+									</Condition>
+									<!-- Ped exiting scenario -->
+									<Condition type="CAIConditionIsExitingScenario"/>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFace" />
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>RespondAndEndFromDefuse</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitToRespondToDefuseEscalated -->
+				<Item key="WaitToRespondToDefuseEscalated">
+					<ConditionalActions>
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionIsOnFoot"/>
+							</Condition>
+							<!-- Don't re-task while on a mount/vehicle here -->
+						</Item>
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- Ped not in scenario -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionArePedConfigFlagsSet">
+											<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+										</Condition>
+									</Condition>
+									<!-- Ped exiting scenario -->
+									<Condition type="CAIConditionIsExitingScenario"/>
+								</Conditions>
+							</Condition>
+							<Action type="CInteractionActionFace" />
+						</Item>
+					</ConditionalActions>
+					<Reactions>
+						<Item>RespondAndEndFromDefuseEscalated</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: WaitBeforeEscalatingTerritoryDispute -->
+				<Item key="WaitBeforeEscalatingTerritoryDispute">
+				
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>VictoryAsWitness</Item>
+						<Item>VictoryDueToDistance</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntrudedAfterDefuse</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToOffender</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>AngerDueToLoiteringAfterInsultOrRob</Item>
+						<Item>AngerDueToLoiteringByCriminal</Item>
+						<Item>AngerDueToMinorProvocation</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<!-- STATE: WatchAgitatorPostIntervene -->
+				<Item key="WatchAgitatorPostIntervene">
+					<Action type="CInteractionActionFace"/>
+					<Reactions>
+						<Item>FightDueToHostility</Item>
+						<Item>FleeDueToAgitatorInteractingWithLaw</Item>
+						<Item>FinishDueToAgitatorNotInteracting</Item>
+						<Item>HelpLeader</Item>
+						<Item>AngerDueToRobbery</Item>
+						<Item>AngerDueToStopVehicle</Item>
+						<Item>AngerDueToWitnessThreat</Item>
+						<Item>AngerDueToWitnessBluff</Item>
+						<Item>AngerDueToStealVehicle</Item>
+						<Item>AngerDueToStoleTransport</Item>
+						<Item>AngerDueToWeaponAimedAt</Item>
+						<Item>AngerDueToHitByPlayer</Item>
+						<Item>AngerDueToTerritoryIntruded</Item>
+						<Item>AngerDueToIntervene</Item>
+						<Item>AngerDueToFollowing</Item>
+						<Item>AngerDueToBump</Item>
+						<Item>AngerDueToProvoke</Item>
+						<Item>AngerDueToRequestRide</Item>
+						<Item>FinishDueToTimeoutPostIntervene</Item>
+					</Reactions>
+					<!-- No TalkResponse here so player can Insult or Defuse -->
+				</Item>
+				
+				<Item key="PostFleeDialogue">
+					<Reactions>
+						<Item>FinishDueToTimeoutPostFlee</Item>
+					</Reactions>
+				</Item>
+				
+				<!-- STATE: Finish -->
+				<Item key="Finish">
+					<ConditionalAction>
+						<!-- Must be using scenario -->
+						<Condition type="CAIConditionArePedConfigFlagsSet">
+							<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+						</Condition>
+						<Action type="CInteractionActionExitAmbientReaction">
+							<EventType>AET_Threatening</EventType>
+						</Action>
+					</ConditionalAction>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+							<!-- Clear the DisplayCalloutPrompts memory (set if we transitioned to this response from StopVehicleResponse) -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>DisplayCalloutPrompts</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<Flags>FinalState</Flags>
+				</Item>
+				
+			</States>
+      
+			<Reactions>
+				<!-- Reaction: HandleGrappled -->
+				<Item key="HandleGrappled">
+					<Condition type="CAIConditionIsTaskRunning">
+						<TaskHash>TASK_GRAPPLED</TaskHash>
+					</Condition>
+					<State>WaitForGrappleToFinishBeforeFight</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- Reaction: HandleLassoed -->
+				<Item key="HandleLassoed">
+					<Condition type="CAIConditionReferenced">
+						<Name>TASK_LASSO_NO_GET_UP</Name>
+					</Condition>
+					<State>WaitForLassoToFinishBeforeFight</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: HandleSwimming -->
+				<Item key="HandleSwimming">
+					<Condition type="CAIConditionIsSwimming" />
+					<State>Timid</State>
+				</Item>
+				
+				<!-- REACTION: ToSelectInitialReaction -->
+				<Item key="ToSelectInitialReaction">
+					<!-- DEFAULT -->
+					<Condition type="NULL"/>
+					<State>SelectInitialReaction</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: HandleEvaluate -->
+				<Item key="HandleEvaluate">
+					<Condition type="NULL"/>
+					<State>Evaluate</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: ReactLookDueToScenario -->
+				<Item key="ReactLookDueToScenario">
+					<!-- Must be using scenario -->
+					<Condition type="CAIConditionArePedConfigFlagsSet">
+						<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+					</Condition>
+					<State>SelectScenarioReactLook</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: MedReactLook -->
+				<Item key="MedReactLook">
+					<!-- And one of these specific provocation types -->
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- CASE: Bump -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Bumped</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Dodged</InteractionType>
+							</Condition>
+							<!-- CASE: Robbed -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Rob</InteractionType>
+							</Condition>
+							<!-- CASE: Territory -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_TerritoryIntruded</InteractionType>
+							</Condition>
+							<!-- CASE: Weapon Aimed -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_WeaponAimedAt</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+								<TimeRangeMS value="1000"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<ConditionalAction>
+						<Condition type="CAIConditionArePedConfigFlagsSet">
+							<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+						</Condition>
+						<Action type="CInteractionScenarioReactionAnimation">
+							<EventType>AET_Threatening</EventType>
+							<Lifetime value="2.0f"/> <!-- The event is only valid for this long if the task doesn't react to it -->
+							<AnimationTime value="60.0f"/> <!-- Set this to a large value. We'll exit the animation manually when the interaction ends. -->
+						</Action>
+					</ConditionalAction>
+					<State>ScenarioReactLook</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: LowReactLook -->
+				<Item key="LowReactLook">
+					<!-- DEFAULT -->
+					<ConditionalAction>
+						<Condition type="CAIConditionArePedConfigFlagsSet">
+							<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+						</Condition>
+						<Action type="CInteractionScenarioReactionAnimation">
+							<EventType>AET_Interesting</EventType>
+							<Lifetime value="2.0f"/> <!-- The event is only valid for this long if the task doesn't react to it -->
+							<AnimationTime value="60.0f"/> <!-- Set this to a large value. We'll exit the animation manually when the interaction ends. -->
+						</Action>
+					</ConditionalAction>
+					<State>ScenarioReactLook</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: SelectInitialReactionDueToFacing -->
+				<Item key="SelectInitialReactionDueToFacing">
+					<Condition type="CAIConditionDirectionRelativeToTargetHead">
+						<FromEntity>SecondaryEntity</FromEntity>
+						<TargetEntity>PrimaryEntity</TargetEntity>
+						<Threshold value="-0.866"/> <!-- 30 degrees -->
+						<FlattenZ value="true"/>
+						<LessThan value="true"/>
+						<UseHeadDirection value="true"/>
+					</Condition>
+					<State>SelectInitialReaction</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: SelectInitialReactionDueToIntroCompleted -->
+				<Item key="SelectInitialReactionDueToIntroCompleted">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- Check that the ped has completed the intro for the ambient reaction -->
+							<Condition type="CAIConditionHasCompletedAmbientReactIntro"/>
+							<!-- If the exit anim is tagged to allow speech, start as soon as possible -->
+							<Condition type="CAIConditionHasMoveNetworkProperty">
+								<Property>ReactSpeechControl</Property>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>SelectInitialReaction</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: SelectInitialReactionDueToReactionFailed -->
+				<Item key="SelectInitialReactionDueToReactionFailed">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- CASE: Ped is no longer using a scenario -->
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionArePedConfigFlagsSet">
+									<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+								</Condition>
+							</Condition>
+							<!-- CASE: The request to play the reaction animation failed -->
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionIsTaskRunning">
+											<TaskHash>TASK_AMBIENT_REACT</TaskHash>
+										</Condition>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionHasValidAmbientEvent"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>SelectInitialReaction</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: WalkAwayDueToAnger -->
+				<Item key="WalkAwayDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- Need this check in case player is on foot with a gun and we cant fight-->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionCanFight"/>
+									</Condition>
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<!-- Ped has no gun to equip -->
+											<Condition type="CAIConditionNot">
+												<Condition type="CAIConditionCanEquipWeapon">
+													<Ped>PrimaryEntity</Ped>
+													<MustBeGun value="true"/>
+												</Condition>
+											</Condition>
+											<Condition type="CAIConditionOr">
+												<Conditions>
+													<!-- Player is at a elevation deemed too high/low from us -->
+													<Condition type="CAIConditionNot">
+														<Condition type="CAIConditionReferenced">
+															<Name>INTERACTION_SMALL_ELEVATION_DIFFERENCE</Name>
+														</Condition>
+													</Condition>
+													<!-- Player in a boat -->
+													<Condition type="CAIConditionIsPedInBoat">
+														<Ped>SecondaryEntity</Ped>
+													</Condition>
+												</Conditions>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.3" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionReset">
+								<ClearPendingAction value="true"/>
+							</Action>
+							<Action type="CInteractionActionSetAgitatorOnMyMind">
+								<ReasonToSetAgitator>EOMMR_NUISANCE</ReasonToSetAgitator>
+							</Action>
+							<Action type="CInteractionActionRequestEmotionalLoco">
+								<TimeToLiveMilliSeconds value="10000"/>
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionAnd">
+									<Conditions>
+										<!-- CASE: Ped in scenario -->
+										<Condition type="CAIConditionArePedConfigFlagsSet">
+											<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+										</Condition>
+										<Condition type="CAIConditionNot">
+											<Condition type="CAIConditionIsExitingScenario"/>
+										</Condition>
+									</Conditions>
+								</Condition>
+								<Action type="CInteractionScenarioExit"/>
+							</Action>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+							<Action type="CInteractionActionChangeResponse">
+								<Response>LeaveDispute</Response>
+								<State>AggressiveWalkAway</State>
+							</Action>
+						</Actions>
+					</Action>
+					<Say>
+						<Audio>
+							<Context>STORM_OFF</Context>
+							<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+							<InteractionSpeechType>Insult</InteractionSpeechType>
+						</Audio>
+						<Flags>IgnoreForcedFailure WaitForPath</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: IgnoreDueToAnger -->
+				<Item key="IgnoreDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionCanFight"/>
+							</Condition>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.16" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetAgitatorOnMyMind">
+								<ReasonToSetAgitator>EOMMR_NUISANCE</ReasonToSetAgitator>
+							</Action>
+							<Action type="CInteractionActionRequestEmotionalLoco">
+								<TimeToLiveMilliSeconds value="10000"/>
+								<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+								<RequestPriority>eMed</RequestPriority>
+							</Action>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionAnd">
+									<Conditions>
+										<!-- CASE: Ped in scenario -->
+										<Condition type="CAIConditionArePedConfigFlagsSet">
+											<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+										</Condition>
+										<Condition type="CAIConditionNot">
+											<Condition type="CAIConditionIsExitingScenario"/>
+										</Condition>
+									</Conditions>
+								</Condition>
+								<Action type="CInteractionScenarioExit"/>
+							</Action>
+						</Actions>
+					</Action>
+					
+					<State>Finish</State>
+					<!-- No say here, just keep walking away -->
+				</Item>
+				
+				<!-- REACTION: FearDueToFleeing -->
+				<Item key="FearDueToFleeing">
+					<!-- Want to make sure we are fleeing and have a certain level of fear -->
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionIsTaskRunning">
+								<TaskHash>TASK_FLEE</TaskHash>
+							</Condition>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>FEAR_STATE</Motivation>
+								<LowerBound value="0.5" />
+								<UpperBound value="1.0" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMotivation">
+						<Motivation>FEAR_STATE</Motivation>
+						<Add value="0.2"/>
+					</Action>
+					<Say>
+						<Audio>
+							<Context>GENERIC_FRIGHTENED_MED</Context>
+							<Flags/>
+						</Audio>
+						<Flags>IgnoreForcedFailure CanInterruptSelf WaitForPath</Flags>
+					</Say>
+					<State>PostFleeDialogue</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToTimeoutPostFlee -->
+				<Item key="FinishDueToTimeoutPostFlee">
+					<Condition type="CInteractionConditionTimeout">
+						<Time value="1.0" />
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+							<Action type="CInteractionActionChangeResponse">
+								<Response>LeaveDispute</Response>
+								<State>WaitForStimulus</State>
+							</Action>
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionIsTaskRunning">
+									<TaskHash>TASK_FLEE</TaskHash>
+									<MustBeActive value="true"/>
+								</Condition>
+								<Action type="CInteractionActionSetAllowFleeDialogue"/>
+							</Action>
+						</Actions>
+					</Action>
+				</Item>
+				
+				<!-- REACTION: AngerDueToBump -->
+				<Item key="AngerDueToBump">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Bumped</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Dodged</InteractionType>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToFollowing -->
+				<Item key="AngerDueToFollowing">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Following</InteractionType>
+					</Condition>
+					<Anger value="0.14" />
+					<State>Evaluate</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToStaring -->
+				<Item key="AngerDueToStaring">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Staring</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.14" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToLoiteringClose -->
+				<Item key="AngerDueToLoiteringClose">
+					<!-- CASE: Loiter Close -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_LoiteringClose</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.14" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToLoiteringAfterInsultOrRob -->
+				<Item key="AngerDueToLoiteringAfterInsultOrRob">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- CASE: agitator close and time elapsed in this state -->
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_TIMEOUT_POST_INSULT</Name>
+									</Condition>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_Speech</InteractionType>
+										<InteractionSpeechType>Insult</InteractionSpeechType>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionOr">
+											<Conditions>
+												<Condition type="CAIConditionReferenced">
+													<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+												</Condition>
+												<Condition type="CAIConditionIsPedMovingAway">
+													<MinMBR value="0.101"/>
+												</Condition>
+											</Conditions>
+										</Condition>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_TIMEOUT_POST_INSULT</Name>
+									</Condition>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_Rob</InteractionType>
+										<InteractionSpeechType>Robbery</InteractionSpeechType>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsOutsideClosestDistance">
+											<Distance value="3.0" />
+										</Condition>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToMinorProvocation -->
+				<Item key="AngerDueToMinorProvocation">
+					<!-- CASE: Loitering - agitator close and time elapsed in this state -->
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionOr">
+											<Conditions>
+												<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+													<InteractionType>IT_PropertyAttacked</InteractionType>
+												</Condition>
+												<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+													<InteractionType>IT_Rummaging</InteractionType>
+												</Condition>
+											</Conditions>
+										</Condition>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsLastInteractionApplied">
+											<InteractionType>IT_HolsteredWeapon</InteractionType>
+										</Condition>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionOr">
+									<Conditions>
+										<Condition type="CInteractionConditionIsLastInteractionApplied">
+											<InteractionType>IT_PropertyAttacked</InteractionType>
+										</Condition>
+										<Condition type="CInteractionConditionIsLastInteractionApplied">
+											<InteractionType>IT_Rummaging</InteractionType>
+										</Condition>
+									</Conditions>
+								</Condition>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_AGGRESSIVE_LOITERING_TIMEOUT</Name>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionReferenced">
+									<Name>INTERACTION_PLAYER_HOLSTERING_POST_AIM</Name>
+								</Condition>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionOr">
+									<Conditions>
+										<Condition type="CAIConditionReferenced">
+											<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+										</Condition>
+										<Condition type="CAIConditionIsPedMovingAway">
+											<MinMBR value="0.101"/>
+										</Condition>
+									</Conditions>
+								</Condition>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: AngerDueToLoiteringByCriminal -->
+				<Item key="AngerDueToLoiteringByCriminal">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionReferenced">
+							<Name>IN_WITNESS_INTERACTION</Name>
+						</Condition>
+						<Condition type="CAIConditionReferenced">
+							<Name>WITNESS_CAN_DEFEND_SELF</Name>
+						</Condition>
+						<Condition type="CInteractionConditionTimeout">
+							<Time value="2.0" />
+						</Condition>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_PLAYER_HOLSTERING_POST_AIM</Name>
+							</Condition>
+						</Condition>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionOr">
+							  <Conditions>
+								<Condition type="CAIConditionReferenced">
+									<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+								</Condition>
+								<Condition type="CAIConditionIsPedMovingAway">
+									<MinMBR value="0.101"/>
+								</Condition>
+							  </Conditions>
+							</Condition>
+						</Condition>
+					  </Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.5" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToMinorProvocationDuringConfront -->
+				<Item key="AngerDueToMinorProvocationDuringConfront">
+					<!-- CASE: Loitering - agitator close and time elapsed in this state -->
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionTimeout">
+								<Time value="2.0" />
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionReferenced">
+									<Name>INTERACTION_PLAYER_HOLSTERING_POST_AIM</Name>
+								</Condition>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionOr">
+									<Conditions>
+										<Condition type="CAIConditionReferenced">
+											<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+										</Condition>
+										<Condition type="CAIConditionIsPedMovingAway">
+											<MinMBR value="0.101"/>
+										</Condition>
+									</Conditions>
+								</Condition>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueGreetPostReject -->
+				<Item key="AngerDueGreetPostReject">
+					<!-- CASE: Greeted -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Speech</InteractionType>
+						<InteractionSpeechType>Greet</InteractionSpeechType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.35" /><!-- Kicking right to confront here -->
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToProvoke -->
+				<Item key="AngerDueToProvoke">
+					<!-- And one of these specific provocation types -->
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- DEFAULT: general provocation case -->
+							<Condition type="CInteractionConditionIsProvoked"/>
+							<!--CASE: Unholster -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_UnholsteredWeapon</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_ShotFired</InteractionType>
+							</Condition>
+							<!-- CASE: Harass -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>Harass</InteractionSpeechType>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_WEAPONTIMEOUT</Name>
+									</Condition>
+									<Condition type="CInteractionConditionLastMeleeLockonTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CInteractionConditionIsLastInteractionApplied">
+							<InteractionType>IT_Speech</InteractionType>
+							<InteractionSpeechType>Harass</InteractionSpeechType>
+						</Condition>
+						<Action type="CInteractionActionMotivation">
+							<Motivation>ANGRY_STATE</Motivation>
+							<Add value="0.15"/>
+						</Action>
+					</Action>
+					<State>Evaluate</State>
+					<Anger value="0.2" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToWeaponAimedAt -->
+				<Item key="AngerDueToWeaponAimedAt">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_WeaponAimedAt</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_WEAPONTIMEOUT</Name>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionReferenced">
+											<Name>INTERACTION_PLAYER_HOLSTERING_POST_AIM</Name>
+										</Condition>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<!-- Player Insulted while aiming -->
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Speech</InteractionType>
+										<InteractionSpeechType>Insult</InteractionSpeechType>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.16" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToConfrontEscalation -->
+				<Item key="AngerDueToConfrontEscalation">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_ConfrontEscalation</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<!-- Go to fight -->
+					<Anger value="1.0" />
+					<Flags>DontClearFlags</Flags>			
+				</Item>
+				
+				<!-- REACTION: AngerDueToWeaponAimedAtDuringConfront -->
+				<Item key="AngerDueToWeaponAimedAtDuringConfront">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_WeaponAimedAt</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionTimeout">
+									  <Time value="2.0" />
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionReferenced">
+											<Name>INTERACTION_PLAYER_HOLSTERING_POST_AIM</Name>
+										</Condition>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<!-- Player Insulted while aiming -->
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Speech</InteractionType>
+										<InteractionSpeechType>Insult</InteractionSpeechType>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToVehicleRobbery -->
+				<Item key="AngerDueToVehicleRobbery">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Rob</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>PED_IS_ROUGH_TRAVELLER_WITH_PASSENGERS</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.45" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToRobberyGrappled -->
+				<Item key="AngerDueToRobberyGrappled">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Rob</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionPedIsGrappled"/>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+							</Action>
+							<!-- Add extra anger if the ped is a guard (to speed up the escalation) -->
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionIsGuard"/>
+								<Action type="CInteractionActionMotivation">
+									<Motivation>ANGRY_STATE</Motivation>
+									<Add value="0.3"/>
+								</Action>
+							</Action>
+						</Actions>
+					</Action>
+					<State>Evaluate</State>
+					<Anger value="0.45" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToRobbery -->
+				<Item key="AngerDueToRobbery">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Rob</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>RobberyThreaten</InteractionSpeechType>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+							</Action>
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>FailedRobberyAttempt</MemoryType>
+							</Action>
+							<!-- Add extra anger if the ped has already rejected a robbery attempt (to speed up the escalation) -->
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionPedHasRobberyMemory">
+									<MemoryType>FailedRobberyAttempt</MemoryType>
+									<SourcePed>SecondaryEntity</SourcePed>
+									<CountMin value="2"/>
+								</Condition>
+								<Action type="CInteractionActionMotivation">
+									<Motivation>ANGRY_STATE</Motivation>
+									<Add value="0.16"/>
+								</Action>
+							</Action>
+							<!-- Add extra anger if the ped is a guard (to speed up the escalation) -->
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionIsGuard"/>
+								<Action type="CInteractionActionMotivation">
+									<Motivation>ANGRY_STATE</Motivation>
+									<Add value="0.16"/>
+								</Action>
+							</Action>
+						</Actions>
+					</Action>
+					<State>WaitForRobberySpeech</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToStopVehicle -->
+				<Item key="AngerDueToStopVehicle">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_StopVehicle</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.1" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToStopVehicleWhileConfrontOrChallenge -->
+				<Item key="AngerDueToStopVehicleWhileConfrontOrChallenge">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_StopVehicle</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.3" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: AngerDueToWitnessThreat -->
+				<Item key="AngerDueToWitnessThreat">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionOr">
+						  <Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>WITNESS_THREATENED_WEAPON</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>WITNESS_THREATENED</Name>
+							</Condition>
+						  </Conditions>
+						</Condition>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionHasForgivenCrime"/>
+						</Condition>
+					  </Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.25" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: AngerDueToWitnessBluff -->
+				<Item key="AngerDueToWitnessBluff">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionReferenced">
+							<Name>WITNESS_KNOWS_ABOUT_CRIME</Name>
+						</Condition>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionHasForgivenCrime"/>
+						</Condition>
+						<Condition type="CAIConditionOr">
+						  <Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>DefuseWitness</InteractionSpeechType>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>ReleaseWitness</InteractionSpeechType>
+							</Condition>
+						  </Conditions>
+						</Condition>
+					  </Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.25" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: AngerDueToWitnessGrapple -->
+				<Item key="AngerDueToWitnessGrapple">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionReferenced">
+							<Name>WITNESS_THREATENED</Name>
+						</Condition>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionHasForgivenCrime"/>
+						</Condition>
+						<Condition type="CInteractionConditionPedIsGrappled"/>
+					  </Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.45" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToStealVehicle -->
+				<Item key="AngerDueToStealVehicle">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Speech</InteractionType>
+						<InteractionSpeechType>StealVehicle</InteractionSpeechType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToStoleTransport -->
+				<Item key="AngerDueToStoleTransport">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_StoleTransport</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.15" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToRequestRide -->
+				<Item key="AngerDueToRequestRide">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Speech</InteractionType>
+						<InteractionSpeechType>RequestRide</InteractionSpeechType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.1" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToHitByPlayer -->
+				<Item key="AngerDueToHitByPlayer">
+					<Condition type="CAIConditionReferenced">
+						<Name>HIT_BY_PLAYER</Name>
+					</Condition>
+					<State>Evaluate</State>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionPedHasSimpleMemoryForPlayer">
+								<Ped>PrimaryEntity</Ped>
+								<PlayerPed>SecondaryEntity</PlayerPed>
+								<MemoryType>DodgedPlayer</MemoryType>
+								<QueryTimeMS value="2000"/>
+							</Condition>
+						</Condition>
+						<Action type="CInteractionActionMotivation">
+							<Motivation>ANGRY_STATE</Motivation>
+							<Add value="0.14"/>
+						</Action>
+					</Action>
+					<!-- Keep this aligned with how much bump gives in simpleresponse.meta-->
+					<Anger value="0.21" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToPropertyAttacked -->
+				<Item key="AngerDueToPropertyAttacked">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionTryingToShove"/>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_PropertyAttacked</InteractionType>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.14" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToIntervene -->
+				<Item key="AngerDueToIntervene">
+					<!-- CASE: Intervened to help someone else -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Intervene</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.2" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToEscalatedIntervene -->
+				<Item key="AngerDueToEscalatedIntervene">
+					<!-- CASE: Intervened to help someone else -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_DangerousIntervene</InteractionType>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.35" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToInterveneForHitWoman -->
+				<Item key="AngerDueToInterveneForHitWoman">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Intervene</InteractionType>		
+									</Condition>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Support</InteractionType>		
+									</Condition>
+								</Conditions>
+							</Condition>
+							
+							<Condition type="CAIConditionEntityExists">
+								<Entity>TertiaryEntity</Entity>
+							</Condition>
+							<Condition type="CAIConditionIsFemale">
+								<Ped>TertiaryEntity</Ped>
+							</Condition>
+							<!-- And one of these specific provocation types against the woman -->
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- CASE: Unarmed damage interaction -->
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<Ped>TertiaryEntity</Ped>
+										<InteractionType>IT_UnarmedDamage</InteractionType>
+									</Condition>
+									<!-- CASE: Shoved by player -->
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<Ped>TertiaryEntity</Ped>
+										<InteractionType>IT_Shove</InteractionType>
+									</Condition>
+									<!-- CASE: Knocked down by player -->
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<Ped>TertiaryEntity</Ped>
+										<InteractionType>IT_KnockToGround</InteractionType>
+									</Condition>
+									<!-- CASE: Grappled down by player -->
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<Ped>TertiaryEntity</Ped>
+										<InteractionType>IT_Grappled</InteractionType>
+									</Condition>
+									<!-- CASE: Recently damaged by unarmed weapon -->
+									<Condition type="CAIConditionDamagedByEntityUnarmed">
+										<DamagedEntity>TertiaryEntity</DamagedEntity>
+										<TimeIntervalMS value="5000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.4" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToOffender -->
+				<Item key="AngerDueToOffender">
+					<!-- And one of these specific provocation types -->
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<!-- CASE: Offending player returns to area -->
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_RecognizeOffender</InteractionType>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.4" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToTerritoryIntruded -->
+				<Item key="AngerDueToTerritoryIntruded">
+					<!-- CASE: Territory intruded -->
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_TerritoryIntruded</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_TIMEOUT_TERRITORY</Name>
+									</Condition>
+									<Condition type="CAIConditionIsTargetInOurTerritory"/>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsAgitatorMovingAway"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CAIConditionAnd">
+							<Conditions>
+								<!-- random chance to get extra angry in order to skip second state only -->
+								<Condition type="CAIConditionMotivationWithinRange">
+									<Motivation>ANGRY_STATE</Motivation>
+									<LowerBound value="0.2" /><!-- motivations get applied before actions take place-->
+									<UpperBound value="0.3" />
+									<UseDirectedMotivation value="true"/>
+								</Condition>
+								<Condition type="CAIConditionRandom">
+									<Chances value="0.5f"/>
+								</Condition>
+							</Conditions>
+						</Condition>
+						<Action type="CInteractionActionMotivation">
+							<Motivation>ANGRY_STATE</Motivation>
+							<Add value="0.14" />
+						</Action>
+					</Action>
+					
+					<State>Evaluate</State>
+					<Anger value="0.14" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToTerritoryIntrudedPostWarning -->
+				<Item key="AngerDueToTerritoryIntrudedPostWarning">
+					<!-- CASE: Territory intruded -->
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_TerritoryIntruded</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionPedHasSimpleMemoryForPlayer">
+								<Ped>PrimaryEntity</Ped>
+								<PlayerPed>SecondaryEntity</PlayerPed>
+								<MemoryType>WarnedPlayerToLeave</MemoryType>
+								<MinTimeMS value="120000"/><!-- within at least 2 minutes -->
+								<QueryTimeMS value="600000"/><!-- no longer than 10 minutes -->
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<!-- Add anger and if we are still under the threshold for confronting then jump there-->
+					<Anger value="0.14"/>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CAIConditionMotivationWithinRange">
+							<Motivation>ANGRY_STATE</Motivation>
+							<LowerBound value="0.0" />
+							<UpperBound value="0.4f" />
+							<UseDirectedMotivation value="true"/>
+						</Condition>
+						<Action type="CInteractionActionMotivation">
+							<Motivation>ANGRY_STATE</Motivation>
+							<Min value="0.4"/>
+						</Action>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: AngerDueToTerritoryIntrudedAfterDefuse -->
+				<Item key="AngerDueToTerritoryIntrudedAfterDefuse">
+					<!-- CASE: Territory intruded -->
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_TerritoryIntruded</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>INTERACTION_ESCALATION_EXTRATIMEOUT_TERRITORY</Name>
+									</Condition>
+									<Condition type="CAIConditionIsTargetInOurTerritory"/>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsAgitatorMovingAway"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Anger value="0.14" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: ReactDueToFollowing -->
+				<Item key="ReactDueToFollowing">
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Following</InteractionType>
+					</Condition>
+					<State>WaitForResponseToMinorInteraction</State>
+					<Say>
+						<Audio>
+							<Context>PLAYER_FOLLOWING</Context>
+							<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+							<InteractionSpeechType>Insult</InteractionSpeechType>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: FaceLevelOneDueToAnger -->
+				<Item key="FaceLevelOneDueToAnger">
+					<State>FaceLevelOne</State>
+					<ConditionalSays>
+						<!-- CASE: Gun aimed at -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionLastWeaponAimedAt">
+											<WeaponFlags>Bow</WeaponFlags>
+										</Condition>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAt">
+										<WeaponFlags>Gun</WeaponFlags>
+									</Condition>
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CInteractionConditionIsInteractionType">
+												<InteractionType>IT_WeaponAimedAt</InteractionType>
+											</Condition>
+											<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+												<TimeRangeMS value="1000"/>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>GUN</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>CanSpeakOverOthers CanInterruptSelf IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Weapon aimed at -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_WeaponAimedAt</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>MELEE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>CanSpeakOverOthers CanInterruptSelf IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: PROPERTY ATTACKED -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_PropertyAttacked</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>STOP_THAT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Territory intruded -->
+						<Item>
+							<Condition type="CAIConditionIsTargetInOurTerritory" />
+							<Say>
+								<Audio>
+									<Context>GET_OUT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Following -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Following</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>PLAYER_FOLLOWING</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Loiter Close -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_LoiteringClose</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>PLAYER_LOITERING</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Staring -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Staring</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>PLAYER_STARING</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- DEFAULT -->
+						<Item>
+							<!-- Peds should never hit the default case.  INTERACTION_ASSERT will cause an assert from code with relevant data -->
+							<Condition type="NULL"/>
+							<Say>
+								<Audio>
+									<Context>INTERACTION_ASSERT</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<!-- REACTION: ChallengeDueToAnger -->
+				<Item key="ChallengeDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.15" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Challenge</State>
+					<ConditionalSays>
+						<!-- CASE: Gun aimed at -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionLastWeaponAimedAt">
+											<WeaponFlags>Bow</WeaponFlags>
+										</Condition>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAt">
+										<WeaponFlags>Gun</WeaponFlags>
+									</Condition>
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CInteractionConditionIsInteractionType">
+												<InteractionType>IT_WeaponAimedAt</InteractionType>
+											</Condition>
+											<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+												<TimeRangeMS value="1000"/>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>GUN</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>CanSpeakOverOthers CanInterruptSelf IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Weapon aimed at -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_WeaponAimedAt</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+										<TimeRangeMS value="1000"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>MELEE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>CanSpeakOverOthers CanInterruptSelf IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Hit by player -->
+						<Item>
+							<Condition type="CAIConditionReferenced">
+								<Name>HIT_BY_PLAYER</Name>
+							</Condition>
+							<Say>
+								<Audio><!-- CHANGE TO GENERIC_ANGRY_REACTION -->
+									<Context>WHATS_YOUR_PROBLEM</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: PROPERTY ATTACKED -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_PropertyAttacked</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>CUT_THAT_OUT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Territory intruded and angry -->
+						<Item>
+							<Condition type="CAIConditionIsTargetInOurTerritory" />
+							<Say>
+								<Audio>
+									<Context>LEAVE_NOW</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Intervening and dangerous agitator -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Intervene</InteractionType>		
+									</Condition>
+									<Condition type="CInteractionConditionIsPedArmed"/>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>DISPUTE_INTERVENE_DANGEROUS</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure CanSpeakOverOthers</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Intervene -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Intervene</InteractionType>		
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>DISPUTE_INTERVENE_HARASSMENT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure CanSpeakOverGroupWhileILOed</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Robbery Threaten -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>ROBBERY_THREATENED</Name>
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>ROBBERY_BASE_CONDITIONS</Name>
+									</Condition>
+								</Conditions>
+							</Condition>							
+							<Say>
+								<Audio>
+									<Context>MELEE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Witness Threaten -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>WITNESS_THREATENED</Name>
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>IN_WITNESS_INTERACTION</Name>
+									</Condition>
+								</Conditions>
+							</Condition>							
+							<Say>
+								<Audio>
+									<Context>WHATS_YOUR_PROBLEM</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Insult -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>Insult</InteractionSpeechType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>INSULT_RESPONSE</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat UseNegativeResponseOverrideContext</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure WaitIfApproachingAndInDifferentInterior</Flags>
+							</Say>
+						</Item>
+						<!-- Default -->
+						<Item>	
+							<Condition type="NULL"/>
+							<Say>
+								<Audio>
+									<Context>WHATS_YOUR_PROBLEM</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<!--REACTION: FightDueToSwimming -->
+				<Item key="FightDueToSwimming">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionIsSwimming" />
+							<Condition type="CAIConditionMotivationWithinRange"><!-- Same as confront -->
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.3" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>FightStart</State>
+				</Item>
+				
+				<!--REACTION: AimDueToAnger -->
+				<Item key="AimDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<!-- Not so much if we can fight here now but if we can actually pull a weapon, which can fight would check if the other ped is armed -->
+							<Condition type="CAIConditionCanEquipWeapon">
+								<Ped>PrimaryEntity</Ped>
+								<MustBeGun value="true"/>
+							</Condition>
+							<!-- Need to check CanFight as well here in case peds are set to flee -->
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionMotivationWithinRange"><!-- Same as confront -->
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.3" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+							<!-- OR THESE -->
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<!-- Already have a two hand in your hand -->
+									<Condition type="CAIConditionTwoHandedWeaponEquipped"/>
+									<!-- Player is at a elevation deemed too high/low from us -->
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionReferenced">
+											<Name>INTERACTION_SMALL_ELEVATION_DIFFERENCE</Name>
+										</Condition>
+									</Condition>
+									<!-- Player in a boat -->
+									<Condition type="CAIConditionIsPedInBoat">
+										<Ped>SecondaryEntity</Ped>
+									</Condition>
+									<!-- Player is antagonizing or in our area while armed -->
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<Condition type="CAIConditionOr">
+												<Conditions>
+													<Condition type="CInteractionConditionIsLastInteractionApplied">
+														<InteractionType>IT_TerritoryIntruded</InteractionType>
+													</Condition>
+													<Condition type="CInteractionConditionIsLastInteractionApplied">
+														<InteractionType>IT_DangerousIntervene</InteractionType>
+													</Condition>
+													<Condition type="CAIConditionIsTargetInOurTerritory"/>
+												</Conditions>
+											</Condition>
+											<Condition type="CInteractionConditionIsPedArmed"/>
+										</Conditions>
+									</Condition>
+									<!-- Player is antagonizing us -->
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<Condition type="CAIConditionRandom">
+												<Chances value="0.25f"/>
+											</Condition>
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<InteractionType>IT_Speech</InteractionType>
+												<InteractionSpeechType>Insult</InteractionSpeechType>
+											</Condition>
+										</Conditions>
+									</Condition>
+									<!-- Player did some robbery dialogue towards us -->
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<Condition type="CAIConditionRandom">
+												<Chances value="0.5f"/>
+											</Condition>
+											<Condition type="CAIConditionOr">
+												<Conditions>
+													<Condition type="CInteractionConditionIsLastInteractionApplied">
+														<InteractionType>IT_Rob</InteractionType>
+														<InteractionSpeechType>Robbery</InteractionSpeechType>
+													</Condition>
+													<Condition type="CInteractionConditionIsLastInteractionApplied">
+														<InteractionType>IT_Speech</InteractionType>
+														<InteractionSpeechType>RobberyThreaten</InteractionSpeechType><!-- This is sent if the first trigger was a robbery-->
+													</Condition>
+												</Conditions>
+											</Condition>
+										</Conditions>
+									</Condition>
+									<!-- Player did some witness threat towards us -->
+									<Condition type="CAIConditionOr">
+									  <Conditions>
+										<Condition type="CAIConditionReferenced">
+											<Name>WITNESS_THREATENED_WEAPON</Name>
+										</Condition>
+										<Condition type="CAIConditionReferenced">
+											<Name>WITNESS_THREATENED</Name>
+										</Condition>
+									  </Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>AimStart</State>
+				</Item>
+				
+				<!-- REACTION: EvaluateDueToConfrontApproachFail -->
+				<Item key="EvaluateDueToConfrontApproachFail">
+					<Condition type="CInteractionConditionConfrontApproachFailed"/>
+					<State>Evaluate</State>
+				</Item>
+				
+				<!-- REACTION: AimDueToConfrontApproachFail -->
+				<Item key="AimDueToConfrontApproachFail">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionConfrontApproachFailed"/>
+							<Condition type="CAIConditionCanEquipWeapon">
+								<Ped>PrimaryEntity</Ped>
+								<MustBeGun value="true"/>
+							</Condition>
+							<!-- Need to check CanFight as well here in case peds are set to flee -->
+							<Condition type="CAIConditionCanFight"/>
+						</Conditions>
+					</Condition>
+					
+					<State>AimStart</State>
+				</Item>
+				
+				<!-- REACTION: ConfrontDueToAnger -->
+				<Item key="ConfrontDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.3" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CAIConditionAnd">
+							<Conditions>
+								<Condition type="CInteractionConditionHasIndirectObjectEntity"/>
+								<Condition type="CAIConditionIsHuman">
+									<Ped>TertiaryEntity</Ped>
+								</Condition>
+								<!-- If you try to make a random ped trigger dialogue without them being in a dispute you will break due to them being in a different interaction group -->
+								<Condition type="CAIConditionIsInDispute">
+									<Ped>TertiaryEntity</Ped>
+								</Condition>
+							</Conditions>
+						</Condition>
+						<Action type="CInteractionActionSendInteraction">
+							<Ped>TertiaryEntity</Ped>
+							<Type>IT_Speech</Type>
+							<SpeechType>CHALLENGE_SUPPORT</SpeechType>
+						</Action>
+					</Action>
+					<State>ConfrontStart</State>
+					<ConditionalSays>
+						<!-- CASE: Weapon Aimed At -->
+						<Item>
+							<Condition type="CInteractionConditionIsPedArmed"/>
+							<Say>
+								<Audio>
+									<Context>CHALLENGE_THREATEN_ARMED</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Recognized a known offender -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+									<InteractionType>IT_RecognizeOffender</InteractionType>		
+							</Condition>
+							<Say>
+								<Audio>
+									<!-- The speech context selector will replace this with a more aggressive line -->
+									<Context>GREET_PLAYER</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: PROPERTY ATTACKED -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_PropertyAttacked</InteractionType>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>AGGRESSIVE_CONFRONT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Intervening to defend a woman -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CInteractionConditionIsInteractionType">
+												<InteractionType>IT_Intervene</InteractionType>		
+											</Condition>
+											<Condition type="CInteractionConditionIsInteractionType">
+												<InteractionType>IT_Support</InteractionType>		
+											</Condition>
+										</Conditions>
+									</Condition>
+									<Condition type="CAIConditionEntityExists">
+										<Entity>TertiaryEntity</Entity>
+									</Condition>
+									<Condition type="CAIConditionIsFemale">
+										<Ped>TertiaryEntity</Ped>
+									</Condition>
+									<!-- And one of these specific provocation types against the woman -->
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<!-- CASE: Unarmed damage interaction -->
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_UnarmedDamage</InteractionType>
+											</Condition>
+											<!-- CASE: Shoved by player -->
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_Shove</InteractionType>
+											</Condition>
+											<!-- CASE: Knocked down by player -->
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_KnockToGround</InteractionType>
+											</Condition>
+											<!-- CASE: Grappled down by player -->
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_Grappled</InteractionType>
+											</Condition>
+											<!-- CASE: Recently damaged by unarmed weapon -->
+											<Condition type="CAIConditionDamagedByEntityUnarmed">
+												<DamagedEntity>TertiaryEntity</DamagedEntity>
+												<TimeIntervalMS value="5000"/>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>HIT_WOMAN</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Escalated Intervene -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_DangerousIntervene</InteractionType>		
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>DISPUTE_INTERVENE_DANGEROUS</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure CanSpeakOverOthers</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Intervene -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+										<InteractionType>IT_Intervene</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_Intervene</InteractionType>		
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>AGGRESSIVE_CONFRONT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Robbery Threaten -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>ROBBERY_THREATENED</Name>
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>ROBBERY_BASE_CONDITIONS</Name>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>AGGRESSIVE_CONFRONT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Witness Threaten -->
+						<Item>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>WITNESS_THREATENED</Name>
+									</Condition>
+									<Condition type="CAIConditionReferenced">
+										<Name>IN_WITNESS_INTERACTION</Name>
+									</Condition>
+								</Conditions>
+							</Condition>							
+							<Say>
+								<Audio>
+									<Context>CHALLENGE_THREATEN</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Insult -->
+						<!-- somewhat restricting to make sure we arent super close to the player already -->
+						<!-- IF insulted and not in a scenario and far away or if in a scenario -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<InteractionType>IT_Speech</InteractionType>
+												<InteractionSpeechType>Insult</InteractionSpeechType>
+											</Condition>
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<InteractionType>IT_Speech</InteractionType>
+												<InteractionSpeechType>Greet</InteractionSpeechType>
+											</Condition>
+										</Conditions>
+									</Condition>
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<Condition type="CAIConditionArePedConfigFlagsSet">
+												<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+											</Condition>
+											<Condition type="CAIConditionIsExitingScenario"/>
+											<Condition type="CAIConditionAnd">
+												<Conditions>
+													<Condition type="CAIConditionNot">
+														<Condition type="CAIConditionArePedConfigFlagsSet">
+															<ConfigFlags>CPED_CONFIG_FLAG_UsingScenario</ConfigFlags>
+														</Condition>
+													</Condition>
+													<Condition type="CInteractionConditionIsOutsideDistance">
+														<Distance value="5.0"/>
+													</Condition>
+												</Conditions>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>AGGRESSIVE_CONFRONT</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<!-- REACTION: FightDueToAnger -->
+				<Item key="FightDueToAnger">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionMotivationWithinRange">
+								<Motivation>ANGRY_STATE</Motivation>
+								<LowerBound value="0.45f" />
+								<UpperBound value="1.0f" />
+								<UseDirectedMotivation value="true"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>FightStart</State>
+					<ConditionalSays>
+						<!-- CASE: Intervening to defend a woman -->
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsInteractionType">
+										<InteractionType>IT_Intervene</InteractionType>		
+									</Condition>
+									<Condition type="CAIConditionEntityExists">
+										<Entity>TertiaryEntity</Entity>
+									</Condition>
+									<Condition type="CAIConditionIsFemale">
+										<Ped>TertiaryEntity</Ped>
+									</Condition>
+									<!-- And one of these specific provocation types against the woman -->
+									<Condition type="CAIConditionOr">
+										<Conditions>
+											<!-- CASE: Unarmed damage interaction -->
+											<Condition type="CInteractionConditionIsLastInteractionApplied">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_UnarmedDamage</InteractionType>
+											</Condition>
+											<!-- CASE: Shoved by player -->
+											<Condition type="CInteractionConditionIsInteractionType">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_Shove</InteractionType>
+											</Condition>
+											<!-- CASE: Knocked down by player -->
+											<Condition type="CInteractionConditionIsInteractionType">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_KnockToGround</InteractionType>
+											</Condition>
+											<!-- CASE: Grappled down by player -->
+											<Condition type="CInteractionConditionIsInteractionType">
+												<Ped>TertiaryEntity</Ped>
+												<InteractionType>IT_Grappled</InteractionType>
+											</Condition>
+											<!-- CASE: Recently damaged by unarmed weapon -->
+											<Condition type="CAIConditionDamagedByEntityUnarmed">
+												<DamagedEntity>TertiaryEntity</DamagedEntity>
+												<TimeIntervalMS value="5000"/>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>HIT_WOMAN</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>CanSpeakOverOthers IgnoreForcedFailure WaitUntilAttacking</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<!-- REACTION: FightDueToHostility -->
+				<Item key="FightDueToHostility">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionReferenced">
+										<Name>RECEIVED_HOSTILE_INTERACTION</Name>
+									</Condition>
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<Condition type="CInteractionConditionWasUsingTerritorialScenario" />
+											<Condition type="CInteractionConditionIsAgitatorEnteringVehicle" />
+										</Conditions>
+									</Condition>
+									<Condition type="CAIConditionNumPedsPlayerHasKnockedOver">
+										<PlayerPed>SecondaryEntity</PlayerPed>
+										<NumPeds value="3"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>FightStart</State>
+					<Anger value="1.0" />
+				</Item>
+				
+				<!-- REACTION: FightDueToReleased -->
+				<Item key="FightDueToReleased">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionCanFight"/>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionOr">
+									<Conditions>
+										<Condition type="CAIConditionIsTaskRunning">
+											<TaskHash>TASK_GRAPPLED</TaskHash>
+										</Condition>
+										<Condition type="CAIConditionReferenced">
+											<Name>TASK_LASSO_NO_GET_UP</Name>
+										</Condition>
+									</Conditions>
+								</Condition>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Anger value="1.0"/>
+					<State>FightStart</State>
+				</Item>
+				
+				<!-- REACTION: StartStopVehicleInteraction -->
+				<Item key="StartStopVehicleInteraction">
+					<!--Player has started stop vehicle event -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_StopVehicle</InteractionType>
+					</Condition>
+					<!-- Change to StopVehicleResponseToPlayer profile to handle the rest-->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>StopVehicleResponseToPlayer</Response>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: StartStealVehicleInteraction -->
+				<Item key="StartStealVehicleInteraction">
+					<!--Player has started stop vehicle event -->
+					<Condition type="CInteractionConditionIsInteractionType">
+						<InteractionType>IT_Speech</InteractionType>
+						<InteractionSpeechType>StealVehicle</InteractionSpeechType>
+					</Condition>
+					<!-- Change to StopVehicleResponseToPlayer profile to handle the rest -->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>StopVehicleResponseToPlayer</Response>
+						<State>DecideOnStealRide</State>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: StartVehicleRobbery -->
+				<Item key="StartVehicleRobbery">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsFirstInteractionApplied">
+									<InteractionType>IT_Rob</InteractionType>
+								</Condition>
+							</Condition>
+							<!-- Don't start vehicle robbery if already rejected it -->
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionPedHasRobberyMemory">
+									<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+									<SourcePed>SecondaryEntity</SourcePed>
+								</Condition>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>ROBBERY_VEHICLE_DRIVER</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<!-- Change to RobberyResponse profile to handle the rest-->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>RobberyResponseDraftVehicleDriver</Response>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: StartJackConfrontInteraction -->
+				<Item key="StartJackConfrontInteraction">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_StoleTransport</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>CAN_CONFRONT_CRIMINAL</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionChangeResponse">
+						<Response>JackConfrontResponse</Response>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item> 
+				
+				<!-- REACTION: StartRobbery -->
+				<Item key="StartRobbery">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsFirstInteractionApplied">
+											<InteractionType>IT_Rob</InteractionType>
+										</Condition>
+									</Condition>
+									<!-- Re-robbery triggered -->
+									<Condition type="CAIConditionReferenced">
+										<Name>CAN_BE_RE_ROBBED</Name>
+									</Condition>		
+								</Conditions>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>ROBBERY_AGGRESSIVE</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<!-- Change to RobberyResponse profile to handle the rest-->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>RobberyResponseAggressive</Response>
+						<State>SelectInitialReactionAggressiveEscalation</State>
+					</Action>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: StartRobberyFromAimOrGrapple -->
+				<Item key="StartRobberyFromAimOrGrapple">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>ROBBERY_START_FROM_GRAPPLED</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>ROBBERY_START_FROM_AIMED_AT</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<!-- Clear any current or pending actions, in case we've preloaded a flee/fight response after being grappled -->
+							<Action type="CInteractionActionReset">
+								<ClearPendingAction value="true"/>
+							</Action>
+							<!-- Change to RobberyResponse profile to handle the rest-->
+							<Action type="CInteractionActionChangeResponse">
+								<Response>RobberyResponseAggressive</Response>
+								<State>SelectInitialReactionAggressiveEscalation</State>
+							</Action>
+						</Actions>
+					</Action>
+					<OfferItem value="0.0" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: BreakoutOfGrappledDueToFailedRobbery -->
+				<Item key="BreakoutOfGrappledDueToFailedRobbery">
+					<Condition type="CAIConditionReferenced">
+						<Name>ROBBERY_BASE_CONDITIONS</Name>
+					</Condition>
+					<Action type="CInteractionSetShouldEscapeNowFromGrapple">
+						<!-- KillParentFleeTaskOnGrappleExit needs to be true in case the grapple task has a parent flee task (ie when the player is attempting an intimidation grapple) -->
+						<KillParentFleeTaskOnGrappleExit value="true"/>
+					</Action>
+					<State>WaitForGrappleBreakoutBeforeFight</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: BreakoutOfGrappledDueToFailedWitness -->
+				<Item key="BreakoutOfGrappledDueToFailedWitness">
+					<Condition type="CAIConditionReferenced">
+						<Name>WITNESS_FAILED_GRAPPLE</Name>
+					</Condition>
+					<Action type="CInteractionSetShouldEscapeNowFromGrapple">
+						<!-- KillParentFleeTaskOnGrappleExit needs to be true in case the grapple task has a parent flee task (ie when the player is attempting an intimidation grapple) -->
+						<KillParentFleeTaskOnGrappleExit value="true"/>
+					</Action>
+					<State>WaitForGrappleBreakoutBeforeFight</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+				<!-- REACTION: BackToWitnessFromAimedOrGrapple -->
+				<Item key="BackToWitnessFromAimedOrGrapple">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>WITNESS_FROM_AIMED_AT</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>WITNESS_FROM_GRAPPLED</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<!-- Change to RobberyResponse profile to handle the rest-->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>WitnessResponseToPlayer</Response>
+						<State>AggressiveEscalationReaction</State>
+					</Action>
+					<Fear value="0.25" />
+					<Flags>DontClearFlags</Flags>
+				</Item>
+
+				<!-- REACTION: StartGunslingerDuel -->
+				<Item key="StartGunslingerDuel">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<!-- Make sure we don't get caught in a loop of duels -->
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionPedHasSimpleMemoryForPlayer">
+									<Ped>PrimaryEntity</Ped>
+									<PlayerPed>SecondaryEntity</PlayerPed>
+									<MemoryType>StartedDuelWithPlayer</MemoryType>
+									<QueryTimeMS value="30000"/>
+								</Condition>
+							</Condition>
+							
+							<!-- This will fail if we are already armed as we won't be able to intimidate so make sure we don't already have a weapon out -->
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsPedArmed">
+									<Ped>PrimaryEntity</Ped>
+								</Condition>
+							</Condition>
+						
+							<Condition type="CAIConditionReferenced">
+								<Name>HAS_ANY_REVOLVER_OR_PISTOL_IN_INVENTORY</Name>
+							</Condition>
+							
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Duel</InteractionType>
+								<InteractionSpeechType>Dueling</InteractionSpeechType>
+							</Condition>
+							
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionChangeResponse">
+						<Response>GunslingerResponseAggressive</Response>
+					</Action>
+				</Item>
+
+				<Item key="FightStartToFightInProgress">
+					<Condition type="CAIConditionIsTaskRunning">
+						<TaskHash>TASK_COMBAT</TaskHash>
+					</Condition>
+					<State>FightInProgress</State>
+				</Item>
+				
+				<Item key="AbortFightDueToFleeing">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionIsTaskRunning">
+								<TaskHash>TASK_FLEE</TaskHash>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_ESCALATION_TIMEOUT</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FightDueToAudioHasFinished -->
+				<Item key="FightDueToAudioHasFinished">
+					<Condition type="CAIConditionNot">
+						<Condition type="CInteractionConditionIsAgitatorTalking"/>
+					</Condition>
+					<State>FightStart</State>
+				</Item>
+				
+				<Item key="ConfrontStartToConfrontInProgress">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CAIConditionIsTaskRunning">
+								<TaskHash>TASK_GRAPPLED</TaskHash>
+							</Condition>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_WeaponAimedAt</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_WeaponAimedAt</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionLastWeaponAimedAtTime">
+								<TimeRangeMS value="1000"/>
+							</Condition>
+							<Condition type="CAIConditionIsTaskRunning">
+								<TaskHash>TASK_CONFRONT</TaskHash>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>ConfrontInProgress</State>
+					<Flags>DontClearFlags</Flags>
+					<ConditionalSays>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_TerritoryIntruded</InteractionType>
+									</Condition>
+									<Condition type="CAIConditionPedHasSimpleMemoryForPlayer">
+										<Ped>PrimaryEntity</Ped>
+										<PlayerPed>SecondaryEntity</PlayerPed>
+										<MemoryType>WarnedPlayerToLeave</MemoryType>
+										<MinTimeMS value="120000"/><!-- within at least 2 minutes -->
+										<QueryTimeMS value="600000"/><!-- no longer than 10 minutes -->
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>WARNED_ALREADY</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionIsPedArmed"/>
+									</Condition>
+									<Condition type="CAIConditionNot">
+										<Condition type="CAIConditionIsOnFoot">
+											<Ped>SecondaryEntity</Ped>
+										</Condition>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>CHALLENGE_THREATEN</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<Item key="AimStartDueToAimInProgress">
+					<Condition type="CAIConditionArePedScriptResetFlagsSet">
+						<Ped>PrimaryEntity</Ped>
+						<ResetFlags>PRF_IsAiming</ResetFlags>
+					</Condition>
+					<Action type="CInteractionActionConditional">
+						<Condition type="CAIConditionAnd">
+							<Conditions>
+								<Condition type="CInteractionConditionHasIndirectObjectEntity"/>
+								<Condition type="CAIConditionIsHuman">
+									<Ped>TertiaryEntity</Ped>
+								</Condition>
+								<!-- If you try to make a random ped trigger dialogue without them being in a dispute you will break due to them being in a different interaction group -->
+								<Condition type="CAIConditionIsInDispute">
+									<Ped>TertiaryEntity</Ped>
+								</Condition>
+							</Conditions>
+						</Condition> 
+						<Action type="CInteractionActionSendInteraction">
+							<Ped>TertiaryEntity</Ped>
+							<Type>IT_Speech</Type>
+							<SpeechType>CHALLENGE_SUPPORT</SpeechType>
+						</Action>
+					</Action>
+					<State>AimInProgress</State>
+					<Flags>DontClearFlags</Flags>
+					<ConditionalSays>
+						<Item>
+							<Condition type="CAIConditionAnd">
+								<Conditions>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_TerritoryIntruded</InteractionType>
+									</Condition>
+									<Condition type="CAIConditionPedHasSimpleMemoryForPlayer">
+										<Ped>PrimaryEntity</Ped>
+										<PlayerPed>SecondaryEntity</PlayerPed>
+										<MemoryType>WarnedPlayerToLeave</MemoryType>
+										<MinTimeMS value="120000"/><!-- within at least 2 minutes -->
+										<QueryTimeMS value="600000"/><!-- no longer than 10 minutes -->
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>WARNED_ALREADY</Context>
+									<Flags>IsInsulting ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<!-- CASE: Intervening and dangerous agitator -->
+						<Item>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_DangerousIntervene</InteractionType>		
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>DISPUTE_INTERVENE_DANGEROUS</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure CanSpeakOverOthers</Flags>
+							</Say>
+						</Item>
+						<!-- Default -->
+						<Item>	
+							<Condition type="NULL"/>
+							<Say>
+								<Audio>
+									<Context>CHALLENGE_THREATEN_ARMED</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Insult</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+				
+				<Item key="EvaluateDueToTimeout">
+					<Condition type="CAIConditionReferenced">
+						<Name>INTERACTION_ESCALATION_TIMEOUT</Name>
+					</Condition>
+					<State>Evaluate</State>
+				</Item>
+				
+				<!--REACTION: FinishDueToTimeoutAfterUnholster-->
+				<Item key="FinishDueToTimeoutAfterUnholster">
+					<Condition type="CInteractionConditionTimeout">
+						<Time value="1.25" />
+					</Condition>
+					<Say>
+						<Audio>
+							<Context>WON_DISPUTE</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToPlayerHolstered -->
+				<Item key="FinishDueToPlayerHolstered">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_HolsteredWeapon</InteractionType>
+							</Condition>
+							<Condition type="CAIConditionPedHasSimpleMemory">
+								<MemoryType>AimedAtByPlayer</MemoryType>
+								<QueryTimeMS value="5000"/><!-- 5 seconds -->
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>WaitBeforeFinish</State>
+				</Item>
+				
+				<!-- REACTION: HelpLeader -->
+				<Item key="HelpLeader">
+					<Condition type="CInteractionConditionHasLeader"/>
+					<Action type="CInteractionActionRequestEmotionalLoco">
+						<TimeToLiveMilliSeconds value="10000"/>
+						<EmotionalPreset>Interaction_Brave</EmotionalPreset>
+						<RequestPriority>eMed</RequestPriority>
+					</Action>
+					
+					<State>HelpWithConfront</State>
+				</Item>
+				
+				<!-- REACTION: ResumeActivityDueToDistance -->
+				<Item key="ResumeActivityDueToDistance">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_DEFUSE_DISTANCE_TIMEOUT</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Finish</State>
+					<ConditionalSays>
+						<!-- CASE: Non-Minor Interactions -->
+						<Item>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionReferenced">
+									<Name>INTERACTION_MINOR_INTERACTION_APPLIED</Name>
+								</Condition>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>WON_DISPUTE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+				</Item>
+
+				<!-- REACTION: VictoryAsWitness -->
+				<Item key="VictoryAsWitness">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionNot">
+							<Condition type="CAIConditionReferenced">
+								<Name>WITNESS_KNOWS_ABOUT_CRIME</Name>
+							</Condition>
+						</Condition>
+						<Condition type="CAIConditionReferenced">
+							<Name>WITNESS_WON_DISPUTE</Name>
+						</Condition>
+					  </Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<!-- If we have a crime we know about - confirm it -->
+							<Action type="CInteractionActionConditional">
+								<Condition type="CAIConditionReferenced">
+									<Name>WITNESS_KNOWS_ABOUT_CRIME</Name>
+								</Condition>
+								<Action type="CInteractionActionConfirmCrimeInvestigating"/>
+							</Action>
+							<!-- Holster weapon if we have no confirmed -->
+							<Action type="CInteractionActionConditional">
+								<Condition type="CInteractionConditionIsPedArmed">
+									<Ped>PrimaryEntity</Ped>
+								</Condition>
+								<Action type="CInteractionActionHolsterWeapon">
+									<ShouldUsedRelaxedHolster value="true" />
+								</Action>
+							</Action>
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>WitnessIgnoredCriminal</MemoryType>
+							</Action>
+						</Actions>
+					</Action>
+					<State>WonDispute</State>
+				</Item>
+				
+				<!-- REACTION: VictoryDueToDistance -->
+				<Item key="VictoryDueToDistance">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_DEFUSE_DISTANCE_TIMEOUT</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>WonDispute</State>
+					<Say>
+						<Audio>
+							<Context>WON_DISPUTE</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: FinishDueToAgitatorNotInteracting -->
+				<Item key="FinishDueToAgitatorNotInteracting">
+					<Condition type="CAIConditionNot">
+						<Condition type="CInteractionConditionAgitatorInteractingWithGroup"/>
+					</Condition>
+					
+					<Action type="CInteractionActionRequestEmotionalLoco">
+						<TimeToLiveMilliSeconds value="10000"/>
+						<EmotionalPreset>Interaction_Nervous</EmotionalPreset>
+						<RequestPriority>eMed</RequestPriority>
+					</Action>
+					
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: VictoryDueToAgitatorNotInteractingAfterToldToStop -->
+				<Item key="VictoryDueToAgitatorNotInteractingAfterToldToStop">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionAudioTimeout">
+								<Time value="4.0" />
+							</Condition>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_PropertyAttacked</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+										<InteractionType>IT_PropertyAttacked</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionIsLastInteractionApplied">
+										<InteractionType>IT_Rummaging</InteractionType>
+									</Condition>
+									<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+										<InteractionType>IT_Rummaging</InteractionType>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Say>
+						<Audio>
+							<Context>WON_DISPUTE</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+					<State>WonDispute</State>
+				</Item>
+				
+				<!-- REACTION: VictoryDueToDistanceEscalated -->
+				<Item key="VictoryDueToDistanceEscalated">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_DEFUSE_DISTANCEESCALATED_TIMEOUT</Name>
+							</Condition>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_AGITATOR_BACKED_OFF</Name>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Say>
+						<Audio>
+							<Context>WON_DISPUTE_ESCALATED</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+					<State>WonDispute</State>
+				</Item>
+				
+				<!-- REACTION: RespondAndEndFromDefuse -->
+				<Item key="RespondAndEndFromDefuse">
+					<Condition type="CAIConditionReferenced">
+						<Name>INTERACTION_ESCALATION_DEFUSE_RESPONSE_TIMEOUT</Name>
+					</Condition>
+					<Say>
+						<Audio>
+							<Context>DEFUSE_RESPONSE</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+							<InteractionSpeechType>Defuse</InteractionSpeechType>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: RespondAndEndFromDefuseEscalated -->
+				<Item key="RespondAndEndFromDefuseEscalated">
+					<Condition type="CAIConditionReferenced">
+						<Name>INTERACTION_ESCALATION_DEFUSE_RESPONSE_TIMEOUT</Name>
+					</Condition>
+					<ConditionalSays>
+						<Item>
+							<Condition type="CAIConditionRandom">
+								<Chances value="0.5" />
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>WON_DISPUTE_ESCALATED</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Defuse</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						
+						<Item>
+							<Condition type="NULL"/>
+							<Say>
+								<Audio>
+									<Context>DEFUSE_RESPONSE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+									<InteractionSpeechType>Defuse</InteractionSpeechType>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+					
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToDefuse -->
+				<Item key="FinishDueToDefuse">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_DEFUSED</Name>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionHasRejectedDefuse"/>
+							</Condition>
+							<!-- Always take the first defuse, otherwise dice roll for subsequent defuses -->
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionHasReceivedDefuseAttempt"/>
+									</Condition>
+									<Condition type="CAIConditionRandom">
+										<Chances value="0.5f"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetAttemptedDefuse"/>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<State>WaitToRespondToDefuse</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToDefuseEscalated -->
+				<Item key="FinishDueToDefuseEscalated">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionReferenced">
+								<Name>INTERACTION_DEFUSED</Name>
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionHasRejectedDefuse"/>
+							</Condition>
+							<!-- Always take the first defuse, otherwise dice roll for subsequent defuses -->
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CAIConditionNot">
+										<Condition type="CInteractionConditionHasReceivedDefuseAttempt"/>
+									</Condition>
+									<Condition type="CAIConditionRandom">
+										<Chances value="0.5f"/>
+									</Condition>
+								</Conditions>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetAttemptedDefuse"/>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<State>WaitToRespondToDefuseEscalated</State>
+				</Item>
+				
+				<!-- REACTION: RemainDueToFailedDefuse -->
+				<Item key="RemainDueToFailedDefuse">
+					<Condition type="CAIConditionReferenced">
+						<Name>INTERACTION_DEFUSED</Name>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionRejectedDefuse"/>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<!-- No state here so we stay in the state we are in -->
+				</Item>
+				
+				<!-- REACTION: FinishDueToFlee -->
+				<Item key="FinishDueToFlee">
+					<Condition type="CAIConditionIsTaskRunning">
+						<TaskHash>TASK_FLEE</TaskHash>
+					</Condition>
+					<Fear value="0.7"/> <!-- Nice high value to keep them fleeing -->
+					<Action type="CInteractionActionChangeResponse">
+						<Response>LeaveDispute</Response>
+						<State>WaitForStimulus</State>
+					</Action>
+					<Say>
+						<Audio>
+							<Context>GENERIC_FRIGHTENED_MED</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: VictoryDueToEnd -->
+				<Item key="VictoryDueToEnd">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsFatallyInjured" />
+							</Condition>
+							<Condition type="CAIConditionOr">
+								<Conditions>
+									<Condition type="CInteractionConditionIsAgitatorFatallyInjured" />
+									<Condition type="CAIConditionAnd">
+										<Conditions>
+											<Condition type="CAIConditionNot">
+												<Condition type="CAIConditionIsTaskRunning">
+													<TaskHash>TASK_COMBAT</TaskHash>
+												</Condition>
+											</Condition>
+											<Condition type="CAIConditionNot">
+												<Condition type="CAIConditionIsTaskRunning">
+													<TaskHash>TASK_NM_CONTROL</TaskHash>
+												</Condition>
+											</Condition>
+										</Conditions>
+									</Condition>
+								</Conditions>
+							</Condition>
+							<Condition type="CInteractionConditionTimeout">
+								<Time value="0.5" />
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>WonFight</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToEnd -->
+				<Item key="FinishDueToEnd">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CAIConditionNot">
+								<Condition type="CAIConditionIsTaskRunning">
+									<TaskHash>TASK_COMBAT</TaskHash>
+								</Condition>
+							</Condition>
+							<Condition type="CInteractionConditionIsFatallyInjured" />
+						</Conditions>
+					</Condition>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToTimeout -->
+				<Item key="FinishDueToTimeout">
+					<Condition type="CInteractionConditionTimeout">
+						<Time value="1.0" />
+					</Condition>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToTimeoutAfterMinorInteraction -->
+				<Item key="FinishDueToTimeoutAfterMinorInteraction">
+					<Condition type="CInteractionConditionTimeout">
+						<Time value="2.0" />
+					</Condition>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: FinishDueToTimeoutPostIntervene -->
+				<Item key="FinishDueToTimeoutPostIntervene">
+					<Condition type="CInteractionConditionTimeout">
+						<Time value="3.0" />
+					</Condition>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: WonFightDueToAgitatorFlee -->
+				<Item key="WonFightDueToAgitatorFlee">
+					<Condition type="CAIConditionNot">
+						<Condition type="CInteractionConditionIsAgitatorFatallyInjured" />
+					</Condition>
+					
+					<State>Finish</State>
+					<Say>
+						<Audio>
+							<Context>WON_DISPUTE_ESCALATED</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>CanSpeakOverOthers IgnoreForcedFailure</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: WonFightDueToAgitatorKilled-->
+				<Item key="WonFightDueToAgitatorKilled">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsAgitatorFatallyInjured" />
+							<Condition type="CInteractionConditionTimeout">
+								<Time value="3.0" />
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Finish</State>
+					<Say>
+						<Audio>
+							<Context>WON_FIGHT</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>CanSpeakOverOthers IgnoreForcedFailure</Flags>
+					</Say>
+				</Item>
+				
+				<!-- REACTION: FleeDueToAgitatorInteractingWithLaw -->
+				<Item key="FleeDueToAgitatorInteractingWithLaw">
+					<Condition type="CInteractionConditionAgitatorInteractingWithLaw"/>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionReset"/>
+							<Action type="CInteractionActionFlee">
+								<FleeStyle>NervousRetreat</FleeStyle>
+								<AllowFleeDialogue value="false"/>
+								<SkipFleeReaction value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<Say>
+						<Audio>
+							<Context>STORM_OFF</Context>
+							<Flags>ForcePlay AllowRepeat</Flags>
+						</Audio>
+						<Flags>IgnoreForcedFailure</Flags>
+					</Say>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: LeaveDisputeDueToEventPriorities -->
+				<Item key="LeaveDisputeDueToEventPriorities">
+					<!-- Ped won't is fleeing from a different target than the agitator -->
+					<!-- and won't be able to respond to interaction actions due to its current event priority -->
+					<!-- so just switch to LeaveDispute to handle the rest. -->
+					<Condition type="CInteractionConditionShouldLeaveDisputeDueToEventPriorities"/>
+					<Action type="CInteractionActionChangeResponse">
+						<Response>LeaveDispute</Response>
+						<State>WaitForStimulus</State>
+					</Action>
+				</Item>
+				
+				<!-- REACTION: FleeDueToWonWitnessDispute -->
+				<Item key="FleeDueToWonWitnessDispute">
+					<Condition type="CAIConditionAnd">
+					  <Conditions>
+						<Condition type="CAIConditionWitnessLeader" />
+						<Condition type="CAIConditionReferenced">
+							<Name>IN_WITNESS_INTERACTION</Name>
+						</Condition>
+						<Condition type="CInteractionConditionTimeout">
+							<Time value="1.0" />
+						</Condition>
+					  </Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+					  <Actions>
+						<Action type="CInteractionActionReset"/>
+						<Action type="CInteractionActionFlee">
+							<FleeStyle>CalmRetreat</FleeStyle>
+							<AllowFleeDialogue value="false"/>
+							<SkipFleeReaction value="true"/>
+						</Action>
+						<Action type="CInteractionActionSetRobberyMemory">
+							<MemoryType>WitnessIgnoredCriminal</MemoryType>
+						</Action>
+						<Action type="CInteractionActionSetRobberyMemory">
+							<MemoryType>FledFromWitnessIntimidation</MemoryType>
+						</Action>
+					  </Actions>
+					</Action>
+					<ConditionalSays>
+						<!-- Won the dispute and are going to tell the law -->
+						<Item>
+							<Condition type="CAIConditionArePedConfigFlagsSet">
+								<ConfigFlags>CPED_CONFIG_FLAG_IsAWitnessReportingACrime</ConfigFlags>
+							</Condition>
+							<Say>
+								<Audio>
+									<Context>WITNESS_REPORT_START</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+						<Item>
+							<Condition type="NULL"/>
+							<Say>
+								<Audio>
+									<Context>WON_DISPUTE</Context>
+									<Flags>ForcePlay AllowRepeat</Flags>
+								</Audio>
+								<Flags>IgnoreForcedFailure</Flags>
+							</Say>
+						</Item>
+					</ConditionalSays>
+					<State>Finish</State>
+				</Item>
+				
+				<!-- REACTION: WaitDueToDefuseAttemptInTerritory -->
+				<Item key="WaitDueToDefuseAttemptInTerritory">
+					<Condition type="CAIConditionAnd">
+						<Conditions>
+							<Condition type="CInteractionConditionIsInteractionType">
+								<InteractionType>IT_Speech</InteractionType>
+								<InteractionSpeechType>Defuse</InteractionSpeechType>
+							</Condition> 
+							<Condition type="CAIConditionIsTargetInOurTerritory"/>
+						</Conditions>
+					</Condition>
+					<Action type="CInteractionActionMulti">
+						<Actions>
+							<Action type="CInteractionActionSetAttemptedDefuse"/>
+							<!-- Clear rob prompt memory -->
+							<Action type="CInteractionActionSetRobberyMemory">
+								<MemoryType>RejectedRobberyAttemptButKeepRobPromptsActive</MemoryType>
+								<ForgetMemory value="true"/>
+							</Action>
+						</Actions>
+					</Action>
+					<State>WaitBeforeEscalatingTerritoryDispute</State>
+				</Item>
+				
+				<!-- REACTION: WatchAgitatorDueToIntervene -->
+				<Item key="WatchAgitatorDueToIntervene">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_Intervene</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsLastInteractionApplied">
+								<InteractionType>IT_DangerousIntervene</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+								<InteractionType>IT_Intervene</InteractionType>
+							</Condition>
+							<Condition type="CInteractionConditionIsPreviousInteractionApplied">
+								<InteractionType>IT_DangerousIntervene</InteractionType>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>WatchAgitatorPostIntervene</State>
+				</Item>
+				
+				<!-- REACTION: EvaluateDueToRobberySpeechEnded -->
+				<Item key="EvaluateDueToRobberySpeechEnded">
+					<Condition type="CAIConditionOr">
+						<Conditions>
+							<Condition type="CInteractionConditionIsTalkingPastDialoguePhase">
+								<Ped>SecondaryEntity</Ped>
+								<Phase value="0.75f"/>                                                                                                                                                    
+							</Condition>
+							<Condition type="CAIConditionNot">
+								<Condition type="CInteractionConditionIsAgitatorTalking"/>
+							</Condition>
+						</Conditions>
+					</Condition>
+					<State>Evaluate</State>
+					<Flags>DontClearFlags</Flags>
+				</Item>
+				
+			</Reactions>
+			
+		</Item>
+		
+	</InteractionResponses>
+</InteractionResponseData>
