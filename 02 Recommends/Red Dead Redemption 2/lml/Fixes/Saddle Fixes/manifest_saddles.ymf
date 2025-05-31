@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CPackFileMetaData>
+  <MapDataGroups/>
+  <HDTxdBindingArray/>
+  <imapDependencies/>
+  <imapDependencies_2/>
+  <itypDependencies_2/>
+  <Interiors/>
+  <UNK_MEMBER_0xE4E2A5F7/>
+  <UNK_MEMBER_0x637C584A/>
+  <txdRelationships/>
+  <UNK_MEMBER_0x7DDADF44/>
+  <UNK_MEMBER_0x7F091F5A>
+    <Item key="SADDLECOMBO_HR1_004_C1_002_M">
+   <owner>saddlecombo_hr1_004_c1_997_merge</owner>
+   <ownerHd>saddlecombo_hr1_004_c1_997_merge+hi</ownerHd>
+   <index1 value="1" />
+   <index2 value="2" />
+  </Item>
+    <Item key="SADDLECOMBO_HR1_005_C3_000_M">
+   <owner>saddlecombo_hr1_005_c3_999_merge</owner>
+   <ownerHd>saddlecombo_hr1_005_c3_999_merge+hi</ownerHd>
+   <index1 value="3" />
+   <index2 value="1" />
+  </Item>
+    <Item key="SADDLECOMBO_HR1_003_C3_002_M">
+   <owner>0x9E4704C7</owner>
+   <ownerHd>0xB80A14B2</ownerHd>
+   <index1 value="0" />
+   <index2 value="1" />
+  </Item>
+    <Item key="SADDLECOMBO_HR1_001_C3_998_M">
+   <owner>saddlecombo_hr1_001_c3_999_merge</owner>
+   <ownerHd>saddlecombo_hr1_001_c3_999_merge+hi</ownerHd>
+   <index1 value="1" />
+   <index2 value="3" />
+  </Item>
+    <Item key="saddlecombo_hr1_005_c1_000_nm">
+   <owner>saddlecombo_hr1_005_c1_000_nm</owner>
+   <ownerHd>saddlecombo_hr1_005_c1_000_nm+hi</ownerHd>
+   <index1 value="0" />
+   <index2 value="65535" />
+  </Item>
+    <Item key="p_c_horse_01_uppr_002_c2_000_m">
+   <owner>p_c_horse_01_uppr_002_c0_000_m</owner>
+   <ownerHd>p_c_horse_01_uppr_002_c0_000_m+hi</ownerHd>
+   <index1 value="0" />
+   <index2 value="1" />
+  </Item>
+  </UNK_MEMBER_0x7F091F5A>
+</CPackFileMetaData>

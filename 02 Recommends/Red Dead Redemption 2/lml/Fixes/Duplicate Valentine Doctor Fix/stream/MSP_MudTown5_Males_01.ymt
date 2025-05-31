@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UNK_MEMBER_0x04BD672F>
+  <UNK_MEMBER_0x124563FF>
+    <Item>
+      <name>0xF4A49898</name>
+      <UNK_MEMBER_0x6BA0D406>Caucasian</UNK_MEMBER_0x6BA0D406>
+      <UNK_MEMBER_0x7F2E3DC6>SLOD_MALE_COAT</UNK_MEMBER_0x7F2E3DC6>
+      <UNK_MEMBER_0xC664B008/>
+      <UNK_MEMBER_0x3FD0C14E/>
+      <UNK_MEMBER_0x509F0480/>
+      <scale value="1.00000000"/>
+      <UNK_MEMBER_0xC547BF6E value="0.00000000"/>
+      <UNK_MEMBER_0x0FA9BAB7 value="0.00000000"/>
+      <UNK_MEMBER_0x558AFB3E value="0.00000000"/>
+      <UNK_MEMBER_0x0F070A31 value="0.00000000"/>
+      <UNK_MEMBER_0x5D6502F4 value="0.00000000"/>
+      <UNK_MEMBER_0x3EEF3D09 value="1.00000000"/>
+      <UNK_MEMBER_0x6DE241BD value="0.00000000"/>
+      <UNK_MEMBER_0xBDB05E7E>0x3224DB51</UNK_MEMBER_0xBDB05E7E>
+      <UNK_MEMBER_0xAEC6FE73 value="true"/>
+      <UNK_MEMBER_0xD3DA0D6B value="false"/>
+      <UNK_MEMBER_0x3A67E76B value="false"/>
+      <UNK_MEMBER_0xA9973338/>
+      <UNK_MEMBER_0x685A958D>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COMBOCOAT_MR1_004</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COMBOCOAT_MR1_004_C1_997_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COMBOCOAT_MR1_004_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>COMBOCOAT_MR1_004_C1_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="143"/>
+          <UNK_MEMBER_0x368C8AC3 value="16"/>
+          <UNK_MEMBER_0xB69E0AE8 value="52"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>EYES_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>EYES_GEN_0000_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>EYES_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>EYES_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_EYE</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="2"/>
+          <UNK_MEMBER_0x368C8AC3 value="45"/>
+          <UNK_MEMBER_0xB69E0AE8 value="45"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAIR_MR1_071</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAIR_GEN_999_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAIR_GEN_999_C0_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAIR_GEN_999_C0_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="9"/>
+          <UNK_MEMBER_0x368C8AC3 value="9"/>
+          <UNK_MEMBER_0xB69E0AE8 value="9"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HEAD_MR1_0065</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HEAD_MR1_SC08_ROUGH_C0_019_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HEAD_MR1_ROUGH_024_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HEAD_MR1_SC08_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>MODULAR_BEARD_MR1_SHV_STACHE_001_07</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BEARD_MR1_000_C0_005_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BEARD_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BEARD_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="9"/>
+          <UNK_MEMBER_0x368C8AC3 value="9"/>
+          <UNK_MEMBER_0xB69E0AE8 value="9"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>P_EYES_MR1_000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>P_EYES_MR1_000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>P_EYES_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>P_EYES_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="44"/>
+          <UNK_MEMBER_0xB69E0AE8 value="47"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>PANTCOMBO_MR1_000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>PANTCOMBO_MR1_000_C1_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>PANTCOMBO_MR1_000_C1_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>PANTCOMBO_MR1_000_C1_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="188"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TEETH_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TEETH_GEN_0000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TEETH_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>TEETH_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TIE_MR1_029</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TIE_MR1_029_C1_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TIE_MR1_029_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0x861B47E1</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="21"/>
+          <UNK_MEMBER_0x368C8AC3 value="21"/>
+          <UNK_MEMBER_0xB69E0AE8 value="21"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>UPPERTORSO_MR1_001</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAND_MR1_000_C0_008_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAND_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAND_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+      </UNK_MEMBER_0x685A958D>
+      <UNK_MEMBER_0x86CF602A>
+        <Item>
+          <id value="38169"/>
+          <UNK_MEMBER_0x1E720953 value="-0.90000000"/>
+        </Item>
+        <Item>
+          <id value="9586"/>
+          <UNK_MEMBER_0x1E720953 value="-0.30000000"/>
+        </Item>
+        <Item>
+          <id value="16009"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="52553"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="9584"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="3437"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+      </UNK_MEMBER_0x86CF602A>
+      <UNK_MEMBER_0x9C2154F8/>
+      <UNK_MEMBER_0x69B495BA/>
+      <UNK_MEMBER_0xF964BFB7>
+        <Item>0x259430C8</Item>
+      </UNK_MEMBER_0xF964BFB7>
+      <UNK_MEMBER_0x645032CC/>
+    </Item>
+    <Item>
+      <name>0xC500C0EA</name>
+      <UNK_MEMBER_0x6BA0D406>Caucasian</UNK_MEMBER_0x6BA0D406>
+      <UNK_MEMBER_0x7F2E3DC6>SLOD_MALE_COAT_HAT</UNK_MEMBER_0x7F2E3DC6>
+      <UNK_MEMBER_0xC664B008/>
+      <UNK_MEMBER_0x3FD0C14E/>
+      <UNK_MEMBER_0x509F0480/>
+      <scale value="1.00000000"/>
+      <UNK_MEMBER_0xC547BF6E value="0.00000000"/>
+      <UNK_MEMBER_0x0FA9BAB7 value="0.00000000"/>
+      <UNK_MEMBER_0x558AFB3E value="0.00000000"/>
+      <UNK_MEMBER_0x0F070A31 value="0.00000000"/>
+      <UNK_MEMBER_0x5D6502F4 value="0.00000000"/>
+      <UNK_MEMBER_0x3EEF3D09 value="1.00000000"/>
+      <UNK_MEMBER_0x6DE241BD value="0.00000000"/>
+      <UNK_MEMBER_0xBDB05E7E>0x3224DB51</UNK_MEMBER_0xBDB05E7E>
+      <UNK_MEMBER_0xAEC6FE73 value="true"/>
+      <UNK_MEMBER_0xD3DA0D6B value="false"/>
+      <UNK_MEMBER_0x3A67E76B value="false"/>
+      <UNK_MEMBER_0xA9973338/>
+      <UNK_MEMBER_0x685A958D>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>BELT_MR1_000_HOLSTER_UNDERCOATWESTRIGHT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BELT_MR1_000_HOLSTER_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BELT_MR1_000_HOLSTER_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BELT_MR1_000_HOLSTER_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="5"/>
+          <UNK_MEMBER_0x368C8AC3 value="5"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COMBOCOAT_MR1_049_WESTERNRIGHT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COMBOCOAT_MR1_049_C1_998_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COMBOCOAT_MR1_049_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>COMBOCOAT_MR1_049_C1_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="21"/>
+          <UNK_MEMBER_0x368C8AC3 value="15"/>
+          <UNK_MEMBER_0xB69E0AE8 value="45"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>EYES_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>EYES_GEN_0000_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>EYES_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>EYES_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_EYE</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="2"/>
+          <UNK_MEMBER_0x368C8AC3 value="113"/>
+          <UNK_MEMBER_0xB69E0AE8 value="110"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAIR_MR1_058</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAIR_GEN_999_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAIR_GEN_999_C0_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAIR_GEN_999_C0_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="9"/>
+          <UNK_MEMBER_0x368C8AC3 value="9"/>
+          <UNK_MEMBER_0xB69E0AE8 value="9"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAT_MR1_011_ALT02</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAT_MR1_011_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAT_MR1_011_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAT_MR1_011_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAT</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="97"/>
+          <UNK_MEMBER_0x368C8AC3 value="89"/>
+          <UNK_MEMBER_0xB69E0AE8 value="92"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HEAD_MR1_9000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HEAD_MR1_SC08_ROUGH_C0_030_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HEAD_MR1_WEATHERED_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HEAD_MR1_SC08_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>PANTCOMBO_MR1_048</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>PANTCOMBO_MR1_048_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>PANTCOMBO_MR1_048_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0x491F423B</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="94"/>
+          <UNK_MEMBER_0x368C8AC3 value="6"/>
+          <UNK_MEMBER_0xB69E0AE8 value="52"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TEETH_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TEETH_GEN_0000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TEETH_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>TEETH_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820/>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>UPPERTORSO_MR1_010</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAND_MR1_000_C0_008_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAND_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAND_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+      </UNK_MEMBER_0x685A958D>
+      <UNK_MEMBER_0x86CF602A>
+        <Item>
+          <id value="15833"/>
+          <UNK_MEMBER_0x1E720953 value="0.30000000"/>
+        </Item>
+        <Item>
+          <id value="16009"/>
+          <UNK_MEMBER_0x1E720953 value="0.10000000"/>
+        </Item>
+        <Item>
+          <id value="38169"/>
+          <UNK_MEMBER_0x1E720953 value="-0.90000000"/>
+        </Item>
+        <Item>
+          <id value="9586"/>
+          <UNK_MEMBER_0x1E720953 value="0.20000000"/>
+        </Item>
+        <Item>
+          <id value="50460"/>
+          <UNK_MEMBER_0x1E720953 value="-0.40000000"/>
+        </Item>
+        <Item>
+          <id value="49787"/>
+          <UNK_MEMBER_0x1E720953 value="0.10000000"/>
+        </Item>
+        <Item>
+          <id value="50039"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="7010"/>
+          <UNK_MEMBER_0x1E720953 value="0.20000000"/>
+        </Item>
+        <Item>
+          <id value="34006"/>
+          <UNK_MEMBER_0x1E720953 value="0.20000000"/>
+        </Item>
+        <Item>
+          <id value="41396"/>
+          <UNK_MEMBER_0x1E720953 value="0.30000000"/>
+        </Item>
+        <Item>
+          <id value="13059"/>
+          <UNK_MEMBER_0x1E720953 value="-0.60000000"/>
+        </Item>
+        <Item>
+          <id value="49231"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="46798"/>
+          <UNK_MEMBER_0x1E720953 value="-0.40000000"/>
+        </Item>
+        <Item>
+          <id value="10308"/>
+          <UNK_MEMBER_0x1E720953 value="-0.60000000"/>
+        </Item>
+        <Item>
+          <id value="60720"/>
+          <UNK_MEMBER_0x1E720953 value="-0.10000000"/>
+        </Item>
+        <Item>
+          <id value="27147"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="43983"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="13709"/>
+          <UNK_MEMBER_0x1E720953 value="-1.00000000"/>
+        </Item>
+        <Item>
+          <id value="36106"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="60334"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="15375"/>
+          <UNK_MEMBER_0x1E720953 value="-0.40000000"/>
+        </Item>
+        <Item>
+          <id value="35627"/>
+          <UNK_MEMBER_0x1E720953 value="-0.70000000"/>
+        </Item>
+        <Item>
+          <id value="53862"/>
+          <UNK_MEMBER_0x1E720953 value="0.10000000"/>
+        </Item>
+        <Item>
+          <id value="42318"/>
+          <UNK_MEMBER_0x1E720953 value="0.50000000"/>
+        </Item>
+        <Item>
+          <id value="56827"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="28287"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="13425"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="22046"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="36277"/>
+          <UNK_MEMBER_0x1E720953 value="0.50000000"/>
+        </Item>
+        <Item>
+          <id value="33485"/>
+          <UNK_MEMBER_0x1E720953 value="0.20000000"/>
+        </Item>
+        <Item>
+          <id value="52553"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="9584"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="3437"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+      </UNK_MEMBER_0x86CF602A>
+      <UNK_MEMBER_0x9C2154F8/>
+      <UNK_MEMBER_0x69B495BA/>
+      <UNK_MEMBER_0xF964BFB7>
+        <Item>0x259430C8</Item>
+      </UNK_MEMBER_0xF964BFB7>
+      <UNK_MEMBER_0x645032CC/>
+    </Item>
+    <Item>
+      <name>0x7B322D4E</name>
+      <UNK_MEMBER_0x6BA0D406>Caucasian</UNK_MEMBER_0x6BA0D406>
+      <UNK_MEMBER_0x7F2E3DC6>SLOD_MALE_COAT_HAT</UNK_MEMBER_0x7F2E3DC6>
+      <UNK_MEMBER_0xC664B008/>
+      <UNK_MEMBER_0x3FD0C14E/>
+      <UNK_MEMBER_0x509F0480/>
+      <scale value="1.00000000"/>
+      <UNK_MEMBER_0xC547BF6E value="0.00000000"/>
+      <UNK_MEMBER_0x0FA9BAB7 value="0.00000000"/>
+      <UNK_MEMBER_0x558AFB3E value="0.00000000"/>
+      <UNK_MEMBER_0x0F070A31 value="0.00000000"/>
+      <UNK_MEMBER_0x5D6502F4 value="0.00000000"/>
+      <UNK_MEMBER_0x3EEF3D09 value="1.00000000"/>
+      <UNK_MEMBER_0x6DE241BD value="0.00000000"/>
+      <UNK_MEMBER_0xBDB05E7E>0x3224DB51</UNK_MEMBER_0xBDB05E7E>
+      <UNK_MEMBER_0xAEC6FE73 value="true"/>
+      <UNK_MEMBER_0xD3DA0D6B value="false"/>
+      <UNK_MEMBER_0x3A67E76B value="false"/>
+      <UNK_MEMBER_0xA9973338/>
+      <UNK_MEMBER_0x685A958D>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>BELT_MR1_000_HOLSTER_UNDERCOAT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BELT_MR1_000_HOLSTER_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BELT_MR1_000_HOLSTER_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BELT_MR1_000_HOLSTER_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="13"/>
+          <UNK_MEMBER_0x368C8AC3 value="13"/>
+          <UNK_MEMBER_0xB69E0AE8 value="13"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COAT_MR1_062_WESTERNRIGHT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COAT_MR1_062_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COAT_MR1_062_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0x0A18E721</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="48"/>
+          <UNK_MEMBER_0x368C8AC3 value="49"/>
+          <UNK_MEMBER_0xB69E0AE8 value="49"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COMBOSHIRT_MR1_011_UNDERCOAT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COMBOSHIRT_MR1_011_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COMBOSHIRT_MR1_011_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0xEBC3415C</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="48"/>
+          <UNK_MEMBER_0xB69E0AE8 value="47"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>EYES_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>EYES_GEN_0000_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>EYES_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>EYES_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_EYE</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="2"/>
+          <UNK_MEMBER_0x368C8AC3 value="13"/>
+          <UNK_MEMBER_0xB69E0AE8 value="14"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAIR_MR1_015</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAIR_GEN_999_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAIR_GEN_999_C0_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAIR_GEN_999_C0_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="68"/>
+          <UNK_MEMBER_0x368C8AC3 value="57"/>
+          <UNK_MEMBER_0xB69E0AE8 value="2"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAT_MR1_011_ALT02</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAT_MR1_011_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAT_MR1_011_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAT_MR1_011_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAT</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="96"/>
+          <UNK_MEMBER_0x368C8AC3 value="98"/>
+          <UNK_MEMBER_0xB69E0AE8 value="107"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HEAD_MR1_0142</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HEAD_MR1_SC08_ROUGH_C0_030_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HEAD_MR1_WEATHERED_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HEAD_MR1_SC08_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>MODULAR_BEARD_MR1_SHV_STACHE_000_06</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BEARD_MR1_000_C0_005_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BEARD_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BEARD_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="68"/>
+          <UNK_MEMBER_0x368C8AC3 value="57"/>
+          <UNK_MEMBER_0xB69E0AE8 value="2"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>PANTCOMBO_MR1_014</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>PANTCOMBO_MR1_014_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>PANTCOMBO_MR1_014_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>PANTCOMBO_MR1_014_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="65"/>
+          <UNK_MEMBER_0x368C8AC3 value="20"/>
+          <UNK_MEMBER_0xB69E0AE8 value="27"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TEETH_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TEETH_GEN_0000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TEETH_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>TEETH_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820/>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TIE_MR1_029</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TIE_MR1_029_C1_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TIE_MR1_029_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0x861B47E1</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="21"/>
+          <UNK_MEMBER_0x368C8AC3 value="21"/>
+          <UNK_MEMBER_0xB69E0AE8 value="21"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>UPPERTORSO_MR1_001</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAND_MR1_000_C0_008_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAND_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAND_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+      </UNK_MEMBER_0x685A958D>
+      <UNK_MEMBER_0x86CF602A>
+        <Item>
+          <id value="41478"/>
+          <UNK_MEMBER_0x1E720953 value="-0.40000000"/>
+        </Item>
+        <Item>
+          <id value="38169"/>
+          <UNK_MEMBER_0x1E720953 value="-0.90000000"/>
+        </Item>
+        <Item>
+          <id value="9586"/>
+          <UNK_MEMBER_0x1E720953 value="-0.30000000"/>
+        </Item>
+        <Item>
+          <id value="27779"/>
+          <UNK_MEMBER_0x1E720953 value="-0.70400000"/>
+        </Item>
+        <Item>
+          <id value="50460"/>
+          <UNK_MEMBER_0x1E720953 value="-0.30000000"/>
+        </Item>
+        <Item>
+          <id value="50039"/>
+          <UNK_MEMBER_0x1E720953 value="0.40000000"/>
+        </Item>
+        <Item>
+          <id value="16009"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="52553"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="9584"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="3437"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+      </UNK_MEMBER_0x86CF602A>
+      <UNK_MEMBER_0x9C2154F8/>
+      <UNK_MEMBER_0x69B495BA/>
+      <UNK_MEMBER_0xF964BFB7>
+        <Item>0x259430C8</Item>
+      </UNK_MEMBER_0xF964BFB7>
+      <UNK_MEMBER_0x645032CC/>
+    </Item>
+    <Item>
+      <name>0x7BD65731</name>
+      <UNK_MEMBER_0x6BA0D406>Caucasian</UNK_MEMBER_0x6BA0D406>
+      <UNK_MEMBER_0x7F2E3DC6>SLOD_MALE_COAT</UNK_MEMBER_0x7F2E3DC6>
+      <UNK_MEMBER_0xC664B008/>
+      <UNK_MEMBER_0x3FD0C14E/>
+      <UNK_MEMBER_0x509F0480/>
+      <scale value="1.00000000"/>
+      <UNK_MEMBER_0xC547BF6E value="0.00000000"/>
+      <UNK_MEMBER_0x0FA9BAB7 value="0.00000000"/>
+      <UNK_MEMBER_0x558AFB3E value="0.00000000"/>
+      <UNK_MEMBER_0x0F070A31 value="0.00000000"/>
+      <UNK_MEMBER_0x5D6502F4 value="0.00000000"/>
+      <UNK_MEMBER_0x3EEF3D09 value="1.00000000"/>
+      <UNK_MEMBER_0x6DE241BD value="0.00000000"/>
+      <UNK_MEMBER_0xBDB05E7E>0x3224DB51</UNK_MEMBER_0xBDB05E7E>
+      <UNK_MEMBER_0xAEC6FE73 value="true"/>
+      <UNK_MEMBER_0xD3DA0D6B value="false"/>
+      <UNK_MEMBER_0x3A67E76B value="false"/>
+      <UNK_MEMBER_0xA9973338/>
+      <UNK_MEMBER_0x685A958D>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COAT_MR1_107</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COAT_MR1_107_C1_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COAT_MR1_107_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0xBE7CC457</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="8"/>
+          <UNK_MEMBER_0x368C8AC3 value="87"/>
+          <UNK_MEMBER_0xB69E0AE8 value="87"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COMBOVEST_MR1_013_UNDERCOAT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COMBOVEST_MR1_013_C1_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COMBOVEST_MR1_013_C1_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>0x9EBB14D9</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC_CLEAN</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="15"/>
+          <UNK_MEMBER_0x368C8AC3 value="125"/>
+          <UNK_MEMBER_0xB69E0AE8 value="129"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>EYES_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>EYES_GEN_0000_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>EYES_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>EYES_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_EYE</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="6"/>
+          <UNK_MEMBER_0x368C8AC3 value="113"/>
+          <UNK_MEMBER_0xB69E0AE8 value="110"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAIR_MR1_057</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAIR_GEN_999_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAIR_GEN_999_C0_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAIR_GEN_999_C0_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="23"/>
+          <UNK_MEMBER_0x368C8AC3 value="87"/>
+          <UNK_MEMBER_0xB69E0AE8 value="57"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HEAD_MR1_0174</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HEAD_MR1_SC08_ROUGH_C0_014_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HEAD_MR1_WEATHERED_015_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HEAD_MR1_SC08_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_ANIMAL</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>MODULAR_BEARD_MR1_SHV_STACHE_000_06</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BEARD_MR1_000_C0_005_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BEARD_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BEARD_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="23"/>
+          <UNK_MEMBER_0x368C8AC3 value="87"/>
+          <UNK_MEMBER_0xB69E0AE8 value="57"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>P_EYES_MR1_000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>P_EYES_MR1_000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>P_EYES_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>P_EYES_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="44"/>
+          <UNK_MEMBER_0xB69E0AE8 value="47"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>PANTCOMBO_MR1_000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>PANTCOMBO_MR1_000_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>PANTCOMBO_MR1_000_C3_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>PANTCOMBO_MR1_000_C3_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="66"/>
+          <UNK_MEMBER_0x368C8AC3 value="27"/>
+          <UNK_MEMBER_0xB69E0AE8 value="65"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TEETH_MR1_0004</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TEETH_GEN_0004_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TEETH_GEN_0004_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>TEETH_GEN_0004_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820/>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>UPPERTORSO_MR1_010</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAND_MR1_000_C0_008_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAND_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAND_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="29"/>
+          <UNK_MEMBER_0x368C8AC3 value="2"/>
+          <UNK_MEMBER_0xB69E0AE8 value="8"/>
+          <probability value="255"/>
+        </Item>
+      </UNK_MEMBER_0x685A958D>
+      <UNK_MEMBER_0x86CF602A>
+        <Item>
+          <id value="38169"/>
+          <UNK_MEMBER_0x1E720953 value="-0.90000000"/>
+        </Item>
+        <Item>
+          <id value="16009"/>
+          <UNK_MEMBER_0x1E720953 value="0.10000000"/>
+        </Item>
+        <Item>
+          <id value="52553"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="9584"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="3437"/>
+          <UNK_MEMBER_0x1E720953 value="0.00000000"/>
+        </Item>
+        <Item>
+          <id value="9586"/>
+          <UNK_MEMBER_0x1E720953 value="0.20000000"/>
+        </Item>
+      </UNK_MEMBER_0x86CF602A>
+      <UNK_MEMBER_0x9C2154F8/>
+      <UNK_MEMBER_0x69B495BA/>
+      <UNK_MEMBER_0xF964BFB7>
+        <Item>0x259430C8</Item>
+      </UNK_MEMBER_0xF964BFB7>
+      <UNK_MEMBER_0x645032CC/>
+    </Item>
+    <Item>
+      <name>0x8A1AF3BA</name>
+      <UNK_MEMBER_0x6BA0D406>Caucasian</UNK_MEMBER_0x6BA0D406>
+      <UNK_MEMBER_0x7F2E3DC6>SLOD_MALE_COAT_HAT</UNK_MEMBER_0x7F2E3DC6>
+      <UNK_MEMBER_0xC664B008/>
+      <UNK_MEMBER_0x3FD0C14E/>
+      <UNK_MEMBER_0x509F0480/>
+      <scale value="1.00000000"/>
+      <UNK_MEMBER_0xC547BF6E value="0.00000000"/>
+      <UNK_MEMBER_0x0FA9BAB7 value="0.00000000"/>
+      <UNK_MEMBER_0x558AFB3E value="0.00000000"/>
+      <UNK_MEMBER_0x0F070A31 value="0.00000000"/>
+      <UNK_MEMBER_0x5D6502F4 value="0.00000000"/>
+      <UNK_MEMBER_0x3EEF3D09 value="1.00000000"/>
+      <UNK_MEMBER_0x6DE241BD value="0.00000000"/>
+      <UNK_MEMBER_0xBDB05E7E>0x3224DB51</UNK_MEMBER_0xBDB05E7E>
+      <UNK_MEMBER_0xAEC6FE73 value="true"/>
+      <UNK_MEMBER_0xD3DA0D6B value="false"/>
+      <UNK_MEMBER_0x3A67E76B value="false"/>
+      <UNK_MEMBER_0xA9973338/>
+      <UNK_MEMBER_0x685A958D>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>BEARD_MR1_013</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>BEARD_MR1_000_C0_005_AB</UNK_MEMBER_0xC8D27281>
+          <normal>BEARD_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>BEARD_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="6"/>
+          <UNK_MEMBER_0x368C8AC3 value="56"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COAT_MR1_087</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COAT_MR1_087_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COAT_MR1_087_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>COAT_MR1_087_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="76"/>
+          <UNK_MEMBER_0x368C8AC3 value="52"/>
+          <UNK_MEMBER_0xB69E0AE8 value="62"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>COMBOVEST_MR1_035_UNDERCOAT</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>COMBOVEST_MR1_035_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>COMBOVEST_MR1_035_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>COMBOVEST_MR1_035_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="21"/>
+          <UNK_MEMBER_0x368C8AC3 value="161"/>
+          <UNK_MEMBER_0xB69E0AE8 value="19"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>EYES_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>EYES_GEN_0000_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>EYES_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>EYES_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_EYE</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="3"/>
+          <UNK_MEMBER_0x368C8AC3 value="21"/>
+          <UNK_MEMBER_0xB69E0AE8 value="8"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAIR_MR1_064</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAIR_GEN_999_C0_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAIR_GEN_999_C0_999_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAIR_GEN_999_C0_999_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAIR</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="6"/>
+          <UNK_MEMBER_0x368C8AC3 value="13"/>
+          <UNK_MEMBER_0xB69E0AE8 value="60"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HAT_MR1_047_ALT02</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAT_MR1_047_C3_999_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAT_MR1_047_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAT_MR1_047_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAT</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="36"/>
+          <UNK_MEMBER_0x368C8AC3 value="18"/>
+          <UNK_MEMBER_0xB69E0AE8 value="18"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>HEAD_MR1_9016</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HEAD_MR1_SC08_ROUGH_C0_006_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HEAD_MR1_WEATHERED_005_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HEAD_MR1_SC08_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_GENERIC</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>PANTCOMBO_MR1_004</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>PANTCOMBO_MR1_004_C3_998_AB</UNK_MEMBER_0xC8D27281>
+          <normal>PANTCOMBO_MR1_004_C3_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>PANTCOMBO_MR1_004_C3_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_COMBINED_LEATHER</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="8"/>
+          <UNK_MEMBER_0x368C8AC3 value="93"/>
+          <UNK_MEMBER_0xB69E0AE8 value="87"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>TEETH_MR1_0000</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>TEETH_GEN_0000_C0_000_AB</UNK_MEMBER_0xC8D27281>
+          <normal>TEETH_GEN_0000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>TEETH_GEN_0000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820/>
+          <UNK_MEMBER_0x48EA2F7E value="0"/>
+          <UNK_MEMBER_0x368C8AC3 value="0"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+        <Item>
+          <UNK_MEMBER_0xC720CAAA>UPPERTORSO_MR1_010</UNK_MEMBER_0xC720CAAA>
+          <UNK_MEMBER_0xC8D27281>HAND_MR1_000_C0_008_AB</UNK_MEMBER_0xC8D27281>
+          <normal>HAND_MR1_000_C0_000_NM</normal>
+          <UNK_MEMBER_0x7A84E7BF>HAND_MR1_000_C0_000_M</UNK_MEMBER_0x7A84E7BF>
+          <UNK_MEMBER_0x66771820>METAPED_TINT_HAT</UNK_MEMBER_0x66771820>
+          <UNK_MEMBER_0x48EA2F7E value="6"/>
+          <UNK_MEMBER_0x368C8AC3 value="56"/>
+          <UNK_MEMBER_0xB69E0AE8 value="0"/>
+          <probability value="255"/>
+        </Item>
+      </UNK_MEMBER_0x685A958D>
+      <UNK_MEMBER_0x86CF602A>
+        <Item>
+          <id value="10726"/>
+          <UNK_MEMBER_0x1E720953 value="-1.00000000"/>
+        </Item>
+        <Item>
+          <id value="16009"/>
+          <UNK_MEMBER_0x1E720953 value="-0.10000000"/>
+        </Item>
+        <Item>
+          <id value="38169"/>
+          <UNK_MEMBER_0x1E720953 value="-0.87000000"/>
+        </Item>
+        <Item>
+          <id value="9586"/>
+          <UNK_MEMBER_0x1E720953 value="-0.40000000"/>
+        </Item>
+      </UNK_MEMBER_0x86CF602A>
+      <UNK_MEMBER_0x9C2154F8/>
+      <UNK_MEMBER_0x69B495BA/>
+      <UNK_MEMBER_0xF964BFB7>
+        <Item>0x4BFA4A07</Item>
+        <Item>0x2F9EEF6E</Item>
+        <Item>0x259430C8</Item>
+      </UNK_MEMBER_0xF964BFB7>
+      <UNK_MEMBER_0x645032CC/>
+    </Item>
+  </UNK_MEMBER_0x124563FF>
+  <UNK_MEMBER_0xC664B008/>
+  <UNK_MEMBER_0x458DD48E/>
+  <UNK_MEMBER_0x509F0480/>
+  <type>0x38F0D686</type>
+  <version value="79"/>
+  <UNK_MEMBER_0xC7DEF13D value="false"/>
+</UNK_MEMBER_0x04BD672F>
