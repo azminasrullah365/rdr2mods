@@ -1,0 +1,20 @@
+<EasyInstall>
+	<Name>AnnSaloon</Name>
+	<Author>KristianD3</Author>
+	<Version>1.0</Version>
+	<Link></Link>
+	<Metadata></Metadata>
+	<Resources>
+		<Resource>
+<DataFile type="PED_METADATA_FILE">meta/Annesburg_Bartender.ymt</DataFile>
+<DataFile type="TIMECYCLEMOD_FILE">stream/ann_saloon.xml</DataFile>
+<StreamingFiles>stream</StreamingFiles>
+<StreamingFiles isAddon="true">addon</StreamingFiles>
+<DataFile type="DLC_ITYP_REQUEST" allowDuplicate="true">addon/door_test.ytyp</DataFile>
+	   <FileReplacement>
+           <GamePath>update:/common/data/dlclist.xml</GamePath>
+           <FilePath>dlclist.xml</FilePath>
+	   </FileReplacement>
+		</Resource>
+	</Resources>
+</EasyInstall>
