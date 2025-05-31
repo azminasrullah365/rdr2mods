@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CPersistenceConstants>
+  <PersistenceDestroyedVehiclesCacheSize value="16" />
+  <PersistenceObjectsCacheSize value="64" />
+  <PersistenceCorpsesCacheSizeSpawned value="30" />
+  <PersistenceCorpsesCacheSizeToSpawn value="100" />
+  <PersistenceCorpsesSaveGameSizeBytes value="45000" />
+  <PersistenceScenariosCacheSizeSpawned value="50" />
+  <PersistenceScenariosCacheSizeToSpawn value="200" />
+  <PersistenceScenariosCacheSizeScriptRequested value="512" /> <!-- note must be power of 2 as this is the size of the atHashMap -->
+  <PersistenceScenariosSaveGameSizeBytes value="45000" />
+  <PersistenceScenariosSaveGameSizeBytesMP value="102400" /> <!-- note this saves to the cloud cache so can be bigger than SP -->
+  <NumHoursToRememberHumanCorpseInTown value="0" />
+  <NumHoursToRememberHumanCorpseOnRoad value="2" />
+  <NumHoursToRememberHumanCorpseCloseToRoad value="12" />
+  <NumHoursToRememberHumanCorpseBetweenTownAndWilderness value="240" />
+  <NumHoursToRememberHumanCorpseInWilderness value="1080" />
+  <NumHoursToRememberAnimalCorpseInTown value="2" />
+  <NumHoursToRememberAnimalCorpseOnRoad value="240" />
+  <NumHoursToRememberAnimalCorpseCloseToRoad value="240" />
+  <NumHoursToRememberAnimalCorpseBetweenTownAndWilderness value="240" />
+  <NumHoursToRememberAnimalCorpseInWilderness value="1080" />
+  <PedLeftVehicleTrackAfterTimeMinutes value="5" /> <!-- value="10". Lowered the value to make peds cross the player earlier -->
+  <NumHoursToRememberVehicleInTown value="12" />
+  <NumHoursToRememberVehicleOnRoad value="12" />
+  <NumHoursToRememberVehicleCloseToRoad value="240" />
+  <NumHoursToRememberVehicleBetweenTownAndWilderness value="360" />
+  <NumHoursToRememberVehicleInWilderness value="1080" />
+  <NumHoursToRememberDoorLockPicked value="12" />
+  <NumHoursToRememberDoorKicked value="48" />
+  <NumHoursToRememberDoorShot value="120" />
+  <NumHoursToRememberDoorBlownOpen value="240" />
+  <NumHoursToRememberScenarioProp value="17520" /> <!-- note this is ingame hours -->
+  <NumHoursToRememberScenarioPropMP value="24" /> <!-- note this is real world hours not ingame hours when in MP -->
+  <NumSecondsBetweenManualCacheSavesMP value="0" /> <!-- this is the cool down time between force manual ransack persistence saves in MP, this is now also on a net tunable -->
+  <!-- Bison corpse will appear earlier instead of dropped near in Hunting with Charles Mission -->
+  <fDistanceForCorpseSpawn value="240.000000" /> <!-- value="60.000000"-->
+  <fDistanceForCorpseRemoval value="260.000000" /> <!-- value="65.000000" -->
+  <!-- End of Hunting Bison with Charles Mission Fix -->
+  <fDistanceForVehicleSpawn value="240.000000" />
+  <fDistanceForVehicleRemoval value="270.000000" />
+  <fDistanceForObjectSpawn value="130.000000" />
+  <fDistanceForObjectRemoval value="150.000000" />
+  <fDistanceForScenarioPropSpawn value="100.000000" />
+  <fDistanceForScenarioPropRemoval value="105.000000" />
+  <fDistanceForScenarioHideSpawn value="100.000000" />
+  <fDistanceForScenarioHideRemoval value="105.000000" />
+  <fExtraDistanceForMovingCorpseRelease value="50.000000" />
+  <fMaxVelocityToConsiderCorpseStable value="1.200000" />
+  <fMinDistanceToClosestTrainTrackHuman value="10.000000" />
+  <fDistanceToClosestTownToConsiderWildernessHuman value="250.000000" />
+  <fDistanceToClosestRoadToConsiderWildernessHuman value="50.000000" />
+  <fDistanceToClosestRoadToConsiderOnRoadHuman value="10.000000" />
+  <fMinDistanceToClosestTrainTrackAnimal value="10.000000" />
+  <fDistanceToClosestTownToConsiderWildernessAnimal value="250.000000" />
+  <fDistanceToClosestRoadToConsiderWildernessAnimal value="20.000000" />
+  <fDistanceToClosestRoadToConsiderOnRoadAnimal value="10.000000" />
+  <fMinDistanceToClosestTrainTrackVehicle value="10.000000" />
+  <fDistanceToClosestTownToConsiderWildernessVehicle value="250.000000" />
+  <fDistanceToClosestRoadToConsiderWildernessVehicle value="35.000000" />
+  <fDistanceToClosestRoadToConsiderOnRoadVehicle value="10.000000" />
+  <fMinDistanceToClosestTrainTrackObject value="3.000000" />
+  <fDistanceToClosestTownToConsiderWildernessObject value="250.000000" />
+  <fDistanceToClosestRoadToConsiderWildernessObject value="35.000000" />
+  <fDistanceToClosestRoadToConsiderOnRoadObject value="20.000000" /> <!-- value="10.000000". Doubled the value to make peds more patience -->
+  <fMaxSizeForMapDefFileToCauseDependency value="20.000000" /> <!-- value="40.000000". Lowered the value to expect Arthur's shorter time noticing the corpse. -->
+  <fMinZValueForMapDefFileToCauseDependency value="15.000000" />
+  <fAgingPeriodMultiplierForLegendaryAnimals value="100000.000000" /> <!-- note this can not be too large else we will overflow an s32 -->
+  <fDistanceToConsiderLegendaryAnimalsAbandoned value="150.000000" />
+  <NumHoursToConsiderLendaryAnimalsAbandoned value="6" />
+  <birdsAndFishTrackList>
+    <Item>
+      <PedHash>a_c_Chicken_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Crow_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Duck_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Vulture_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_CALIFORNIACONDOR_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Turkey_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Turkey_02</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Turkeywild_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Parrot_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Egret_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Eagle_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Hawk_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Heron_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Goosecanada_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_CraneWhooping_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Loon_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Owl_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Pelican_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Pheasant_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Prairiechicken_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Quail_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Raven_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_RedFootedBooby_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_Rooster_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Roseatespoonbill_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>a_c_Seagull_01</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHAMBERJACK_01_ML</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHBLUEGIL_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHBULLHEADCAT_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHCHAINPICKEREL_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHCHANNELCATFISH_01_XL</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHBULLHEADCAT_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHCHAINPICKEREL_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHCHANNELCATFISH_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHCOBIA_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHGREATBARRACUDA_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHLAKESTURGEON_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHLARGEMOUTHBASS_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHLONGNOSEGAR_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHMUSKIE_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHNORTHERNPIKE_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHPERCH_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHREDFINPICKEREL_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHREDSNAPPER_01_ML</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHROCKBASS_01_MS</PedHash>
+      <OnlyIfLegendary value="true" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHSMALLMOUTHBASS_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHSALMONSOCKEYE_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHRAINBOWTROUT_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+    <Item>
+      <PedHash>A_C_FISHWAHOO_01_LG</PedHash>
+      <OnlyIfLegendary value="false" />
+    </Item>
+  </birdsAndFishTrackList>
+  <criticalRansackModelNames>
+	<Item>
+		<ModelNameHash>p_cigarettebox01x</ModelNameHash>
+		<Priority value="0" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_goldbar01x</ModelNameHash>
+		<Priority value="0" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_goldbar02x</ModelNameHash>
+		<Priority value="0" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_goldnugget01x</ModelNameHash>
+		<Priority value="0" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_foldedbills01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_cs_billstack01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_coin01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pu_coinpurse02x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_coinSack01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_coincup01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_moneyclip01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_moneyStack01x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>P_FOLDEDBILLSSMALL01X</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_coincup02x</ModelNameHash>
+		<Priority value="1" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_valerianroot01x</ModelNameHash>
+		<Priority value="2" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_agedpiraterum01x</ModelNameHash>
+		<Priority value="2" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_ginsengelixir01x</ModelNameHash>
+		<Priority value="2" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_CombVikingAncient01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_dis_ammolite01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_ancientfertilityfgr01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_fertilityStatue01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_dis_flourite01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_ancientArrowhead01x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_ancientArrowhead02x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>p_ancientArrowhead03x</ModelNameHash>
+		<Priority value="3" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_fancy01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_fancy02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_jewelrybag01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_plain01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_plain02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_poor01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_lrg_poor02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_fancy01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_fancy02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_pickup_jewelrybag02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_plain01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_plain02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_poor01x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_jewlerybox_sm_poor02x</ModelNameHash>
+		<Priority value="4" />
+	</Item>
+	<Item>
+		<ModelNameHash>P_TNT01X</ModelNameHash>
+		<Priority value="5" />
+	</Item>
+	<Item>
+		<ModelNameHash>w_throw_molotov01</ModelNameHash>
+		<Priority value="5" />
+	</Item>
+	<Item>
+		<ModelNameHash>w_melee_tomahawk01</ModelNameHash>
+		<Priority value="5" />
+	</Item>
+	<Item>
+		<ModelNameHash>w_melee_knife05</ModelNameHash>
+		<Priority value="5" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_pistolAmmo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_used_pistolAmmo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_xpres_pstAmmo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_highvlcty_pstammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_revolverammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_used_revAmmo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_xpres_revAmmo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_highvlcty_revammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_repeat_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_repeatUsed_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_repeatXS_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_repeatHV_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_used_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_xpres_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_highvlcty_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_shotgunammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_used_shotgunammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_varmint_rifleammo01x</ModelNameHash>
+		<Priority value="6" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_tabacco01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_CocaineGum01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>S_INV_MEDICINE01X</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_flask01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_medicine_fty</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_cMountainBitters_Tl</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>S_INV_SNAKEOIL_FTY</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_supertonic01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_cMountainBitters_Sl</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_SnakeOil01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_tonic01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_tabaccoUsed01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_UsedCocaineGum01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_medicineHalf01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_CMBitters_used_Sl</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_SnakeOilHalf01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_tonicHalf01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_HorseMed01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_HorseReviver01x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_craft_horseStimulant05x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_inv_HorseMed_fty</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+	<Item>
+		<ModelNameHash>s_craft_HorseStimulant04x</ModelNameHash>
+		<Priority value="8" />
+	</Item>
+  </criticalRansackModelNames>
+</CPersistenceConstants>

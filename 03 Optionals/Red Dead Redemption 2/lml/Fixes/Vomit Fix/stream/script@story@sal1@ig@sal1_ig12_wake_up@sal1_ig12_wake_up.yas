@@ -1,0 +1,1392 @@
+﻿<fwAnimSceneData>
+  <sceneOrigin type="fwAnimSceneMatrixData">
+    <matrix content="matrix34">
+      1 0 0 -340.53
+      0 1 0 -261.66
+      0 0 1 89.66
+    </matrix>
+  </sceneOrigin>
+  <entities>
+    <Item key="CAMERA" type="fwAnimSceneCameraData">
+      <toolData />
+      <conditions />
+      <evaluationType>0xBAFBD7EA</evaluationType>
+      <0x09FCB95D value="-1.00000000" />
+      <0x3AF21F31 value="-1.00000000" />
+      <0x209D37A7 value="1.00000000" />
+      <0xDCDB7C66 value="false" />
+      <0x43BA9B76 value="false" />
+      <0x3BF18C4D value="false" />
+      <0xFEA95D43 value="false" />
+    </Item>
+    <Item key="BLOOP" type="fwAnimSceneBooleanData">
+      <toolData />
+      <conditions />
+      <evaluationType>0xBAFBD7EA</evaluationType>
+      <value value="false" />
+      <0xBAC8E518 value="false" />
+    </Item>
+    <Item key="0x71079D70" type="fwAnimSceneAudioData">
+      <toolData />
+      <conditions />
+      <evaluationType>0xBAFBD7EA</evaluationType>
+      <0x91B14099 />
+      <0x62ADE224>0x41144274</0x62ADE224>
+      <0xA5E7A3A7>0xF2D9AB71</0xA5E7A3A7>
+      <0x2BA84559 />
+    </Item>
+    <Item key="AUDIO" type="fwAnimSceneAudioData">
+      <toolData />
+      <conditions />
+      <evaluationType>0xBAFBD7EA</evaluationType>
+      <0x91B14099 itemType="fwAnimSceneEntityToSpeakerIdsData">
+        <Item>
+          <0x84B954E7 type="fwAnimSceneEntityHandleData">
+            <entityId>ARTHUR</entityId>
+          </0x84B954E7>
+          <0xEE56E9D8>ARTHUR</0xEE56E9D8>
+        </Item>
+      </0x91B14099>
+      <0x62ADE224>0x46A18A4C</0x62ADE224>
+      <0xA5E7A3A7>0x6FFBDDCF</0xA5E7A3A7>
+      <0x2BA84559 itemType="fwAnimScenePlayListAudioInfoData">
+        <Item>
+          <PlayListId>0xFF387E65</PlayListId>
+          <ConversationRoots>
+            <Item>SAL1_IG12</Item>
+            <Item>0x6EBFA09D</Item>
+            <Item>0xC252FB63</Item>
+            <Item>0x8ECB90FB</Item>
+          </ConversationRoots>
+        </Item>
+        <Item>
+          <PlayListId />
+          <ConversationRoots>
+            <Item>SAL1_IG12</Item>
+            <Item>0x6EBFA09D</Item>
+            <Item>0xC252FB63</Item>
+            <Item>0x8ECB90FB</Item>
+          </ConversationRoots>
+        </Item>
+        <Item>
+          <PlayListId>PL_WAKE_UP</PlayListId>
+          <ConversationRoots>
+            <Item>SAL1_IG12</Item>
+            <Item>0x6EBFA09D</Item>
+            <Item>0xC252FB63</Item>
+            <Item>0x8ECB90FB</Item>
+          </ConversationRoots>
+        </Item>
+   <!-- <Item>
+          <PlayListId>HERB_PL</PlayListId>
+          <ConversationRoots>
+            <Item>0xC252FB63</Item>
+            <Item>0x8ECB90FB</Item>
+          </ConversationRoots>
+        </Item> -->
+      </0x2BA84559>
+    </Item>
+    <Item key="ARTHUR" type="fwAnimScenePedData">
+      <toolData />
+      <conditions />
+      <evaluationType>0xBAFBD7EA</evaluationType>
+      <debugModelName>PLAYER_ZERO</debugModelName>
+      <0xDC110A02 />
+      <optional value="false" />
+      <transient value="false" />
+      <0xE47BA481 value="false" />
+      <pSceneOffset />
+      <0xE825C15F value="false" />
+      <createEntity value="false" />
+      <physicalFlags />
+      <linkedEntity type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </linkedEntity>
+      <leadIns />
+      <initialInventory type="fwAnimSceneInventorySetData">
+        <inventory />
+      </initialInventory>
+      <pedFlags />
+      <outfit />
+      <subOutfit />
+      <0xFF8220B9 />
+    </Item>
+  </entities>
+  <sections>
+    <Item key="MAIN" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events />
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="0x31788D48" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="16.40000000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>STANDING_UP_FB_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_EXTRACT_INITIAL_OFFSET, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_EXTRACT_INITIAL_OFFSET, TAF_USE_MOVER_EXTRACTION, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags>AIK_DISABLE_LEG_IK, AIK_DISABLE_ARM_IK, AIK_DISABLE_HEAD_IK, AIK_DISABLE_TORSO_IK</ikFlags>
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.50000000" />
+            <blendOutDuration value="0.50000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="true" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayCameraAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>CAMERA</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="16.36667000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>STANDING_UP_FB_CAM</clipName>
+            </clip>
+            <0x4FDB02F0>
+             -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+             -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+             -1 -1 -1 -1
+            </0x4FDB02F0>
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.00000000" />
+            <0x64BE00E5 value="-1.00000000" />
+            <0x895EF81B value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <cameraSettings>0x8424DFBA, 0x059E28F4, 0x2706A48D</cameraSettings>
+            <0x300B8847 />
+            <pSceneOffset />
+            <0x54AF1DAB />
+            <0xB0E887EB />
+            <0x937BFA7B value="-1.00000000" />
+            <0x594DB973 value="-1.00000000" />
+            <uiContext>CUTSCENE</uiContext>
+            <0x67B6947A>0x5C065A43</0x67B6947A>
+            <0x0C6250F8>0x949E9152</0x0C6250F8>
+          </Item>
+          <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="16.90000000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>SAL1_IG12</Name>
+            <0xA5B1359C value="false" />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="-3.49543800" y="0.52658400" z="0.89766700" w="-3.495438" />
+          <startRot x="-0.18454300" y="0.15141200" z="-0.61586310" w="0.75082000" />
+          <startTime value="0.00000000" />
+          <endPos x="-1.81900600" y="-3.91732600" z="1.47238300" w="-1.819006" />
+          <endRot x="-0.08042200" y="0.00277300" z="-0.04628500" w="0.99568200" />
+          <endTime value="16.36667000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="-1.05388200" y="0.58322000" z="0.83312400" w="-1.053882" />
+          <startRot x="0.00000000" y="0.00000000" z="0.47722900" w="0.87877900" />
+          <startTime value="0.00000000" />
+          <endPos x="-1.05388200" y="0.58322000" z="0.83312400" w="-1.053882" />
+          <endRot x="0.00000000" y="0.00000000" z="0.47722900" w="0.87877900" />
+          <endTime value="16.40000000" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_DRUNKEN_WALKING_UP" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.76666700" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>DRUNKEN_WALKING_UP_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_UPPERBODY, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags>AIK_UPPERBODY</ikFlags>
+            <aiFlags>TAAF_SECONDARY</aiFlags>
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.50000000" />
+            <blendOutDuration value="0.50000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.76666700" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0x6EBFA09D</Name>
+            <0xA5B1359C value="false" />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="0.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="2.76666700" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_LOOP" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId>BLOOP</entityId>
+      </0xBB18B485>
+      <0x47B47045 value="true" />
+      <loopCount value="0" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="3.66666700" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>LAYING_DOWN_LOOP_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_EXTRACT_INITIAL_OFFSET, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_EXTRACT_INITIAL_OFFSET, TAF_USE_MOVER_EXTRACTION, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags>AIK_DISABLE_LEG_IK, AIK_DISABLE_ARM_IK, AIK_DISABLE_HEAD_IK, AIK_DISABLE_TORSO_IK</ikFlags>
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.00000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="true" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayCameraAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>CAMERA</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="3.66666700" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>LAYING_DOWN_LOOP_CAM</clipName>
+            </clip>
+            <0x4FDB02F0>
+             -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+             -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+             -1 -1 -1 -1
+            </0x4FDB02F0>
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.00000000" />
+            <0x64BE00E5 value="-1.00000000" />
+            <0x895EF81B value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <cameraSettings>0x8424DFBA, 0x059E28F4</cameraSettings>
+            <0x300B8847 />
+            <pSceneOffset />
+            <0x54AF1DAB />
+            <0xB0E887EB />
+            <0x937BFA7B value="-1.00000000" />
+            <0x594DB973 value="-1.00000000" />
+            <uiContext>CUTSCENE</uiContext>
+            <0x67B6947A>0x5C065A43</0x67B6947A>
+            <0x0C6250F8>0x949E9152</0x0C6250F8>
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="-3.49543800" y="0.52658400" z="0.89766700" w="-3.495438" />
+          <startRot x="-0.18454300" y="0.15141200" z="-0.61586310" w="0.75082000" />
+          <startTime value="0.00000000" />
+          <endPos x="-3.49543800" y="0.52658400" z="0.89766700" w="-3.495438" />
+          <endRot x="-0.18454300" y="0.15141200" z="-0.61586310" w="0.75082000" />
+          <endTime value="3.66666700" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="-1.05388200" y="0.58322000" z="0.83312400" w="-1.053882" />
+          <startRot x="0.00000000" y="0.00000000" z="0.47722900" w="0.87877900" />
+          <startTime value="0.00000000" />
+          <endPos x="-1.05388200" y="0.58322000" z="0.83312400" w="-1.053882" />
+          <endRot x="0.00000000" y="0.00000000" z="0.47722900" w="0.87877900" />
+          <endTime value="3.66666700" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="0xD494348E" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="6.83333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren type="fwAnimSceneEventListData">
+              <events>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="5.26666700" />
+                  <endTime value="5.83333300" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="-0.05000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="1.30000000" />
+                  <endTime value="4.30000000" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="-0.05000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+              </events>
+            </pChildren>
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>PUKING_FB_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.50000000" />
+            <blendOutDuration value="0.00000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="6.33333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0xC252FB63</Name>
+            <0xA5B1359C value="false" />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="-0.98295400" y="0.24511100" z="0.00496000" w="-0.982954" />
+          <endRot x="0.00000000" y="0.00000000" z="0.76124400" w="0.64846500" />
+          <endTime value="6.83333300" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_EXIT" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.43333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>EXIT_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_UPPERBODY, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.50000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.43333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0x8ECB90FB</Name>
+            <0xA5B1359C value="false" />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="0.14719100" y="-0.60878500" z="0.00000000" w="0.147191" />
+          <endRot x="0.00000000" y="0.00000000" z="-0.80505400" w="0.59320100" />
+          <endTime value="2.43333300" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+
+    <Item key="S_ENTER_FREEROAM" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="6.83333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren type="fwAnimSceneEventListData">
+              <events>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="5.26666700" />
+                  <endTime value="5.83333300" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="-0.05000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="1.30000000" />
+                  <endTime value="4.30000000" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="-0.05000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+              </events>
+            </pChildren>
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>PUKING_FB_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.50000000" />
+            <blendOutDuration value="0.00000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+        <!--  <Item type="fwAnimScenePlayAmbientSpeechEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.02500000" />
+            <endTime value="0.60000000" />
+            <preloadTime value="0.00000000" />
+            <pChildren type="NULL" />
+            <UNK_MEMBER_0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData type="NULL" />
+            <ContextName>BREATH_SHARP_INHALE</ContextName>
+            <VoiceName />
+            <VoiceMode>0xC5814691</VoiceMode>
+            <Variation value="1" />
+            <0xD11EFDD8 />
+          </Item> -->
+          <Item type="fwAnimScenePlayAmbientSpeechEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.88500000" />
+            <endTime value="1.30000000" />
+            <preloadTime value="0.00000000" />
+            <pChildren type="NULL" />
+            <UNK_MEMBER_0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData type="NULL" />
+            <ContextName>VOMIT</ContextName>
+            <VoiceName />
+            <VoiceMode>0xC5814691</VoiceMode>
+            <Variation value="1" />
+            <0xD11EFDD8 />
+          </Item>
+          <Item type="fwAnimScenePlayAmbientSpeechEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="5.23500000" />
+            <endTime value="5.50000000" />
+            <preloadTime value="0.00000000" />
+            <pChildren type="NULL" />
+            <UNK_MEMBER_0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData type="NULL" />
+            <ContextName>VOMIT</ContextName>
+            <VoiceName />
+            <VoiceMode>0xC5814691</VoiceMode>
+            <Variation value="2" />
+            <0xD11EFDD8 />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="-0.98295400" y="0.24511100" z="0.00496000" w="-0.982954" />
+          <endRot x="0.00000000" y="0.00000000" z="0.76124400" w="0.64846500" />
+          <endTime value="6.83333300" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_EXIT_FREEROAM" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.43333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>SCRIPT_STORY@SAL1@IG@SAL1_IG12_WAKE_UP</clipDictionaryName>
+              <clipName>EXIT_ARTHUR</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_UPPERBODY, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.50000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+          <Item type="fwAnimScenePlayAmbientSpeechEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.50000000" />
+            <endTime value="0.90000000" />
+            <preloadTime value="0.00000000" />
+            <pChildren type="NULL" />
+            <UNK_MEMBER_0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData type="NULL" />
+            <ContextName>COUGH_CLEAR_THROAT</ContextName>
+            <VoiceName />
+            <VoiceMode>0xC5814691</VoiceMode>
+            <Variation value="-1" />
+            <0xD11EFDD8 />
+          </Item>
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="0.14719100" y="-0.60878500" z="0.00000000" w="0.147191" />
+          <endRot x="0.00000000" y="0.00000000" z="-0.80505400" w="0.59320100" />
+          <endTime value="2.43333300" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+
+                <!-- ///// OLD METHOD ///// -->
+
+    <Item key="S_ENTER_ALTERNATIVE" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.43850000" />
+            <preloadTime value="4.00000000" />
+            <pChildren type="fwAnimSceneEventListData">
+              <events>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="0.48250000" />
+                  <endTime value="2.10000000" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+              </events>
+            </pChildren>
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>amb_misc@world_human_puke@male_a@enter</clipDictionaryName>
+              <clipName>ENTER</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.50000000" />
+            <blendOutDuration value="0.0000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="0.92500000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+     <!-- <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.44500000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0xC252FB63</Name>
+            <0xA5B1359C value="false" />
+          </Item> -->
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="-0.98295400" y="0.24511100" z="0.00496000" w="-0.982954" />
+          <endRot x="0.00000000" y="0.00000000" z="0.76124400" w="0.64846500" />
+          <endTime value="2.67500000" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_BASE_ALTERNATIVE" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.90000000" />
+            <preloadTime value="4.00000000" />
+            <pChildren type="fwAnimSceneEventListData">
+              <events>
+                <Item type="fwAnimScenePlayPtFxEventData">
+                  <entity type="fwAnimSceneEntityHandleData">
+                    <entityId>ARTHUR</entityId>
+                  </entity>
+                  <startTime value="0.50000000" />
+                  <endTime value="2.90000000" />
+                  <preloadTime value="4.00000000" />
+                  <pChildren />
+                  <0xAB28F89C value="false" />
+                  <state>0x9D9DEE9D</state>
+                  <toolData />
+                  <ptFxName>ENT_ANIM_HUMAN_PUKE</ptFxName>
+                  <ptFxAssetName>ANM_HUMAN_SICK_PEE</ptFxAssetName>
+                  <offsetPosition x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <offsetEulerRotation x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+                  <0xDB6A0211 value="false" />
+                  <scale value="1.00000000" />
+                  <probability value="100" />
+                  <boneId>ID_SKEL_HEAD</boneId>
+                  <color value="0x00000000" />
+                  <isLooping value="true" />
+                  <isAttached value="true" />
+                  <isBlood value="false" />
+                  <tempEvoMin value="0.00000000" />
+                  <tempEvoMax value="0.00000000" />
+                  <0x626A3D6E value="0.00000000" />
+                  <0x388E7270 value="0.00000000" />
+                </Item>
+              </events>
+            </pChildren>
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>amb_misc@world_human_puke@male_a@base</clipDictionaryName>
+              <clipName>BASE</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_NOT_INTERRUPTABLE, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.30000000" />
+            <blendOutDuration value="0.00000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+         <!-- <Item type="fwAnimScenePlaySoundEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>0x71079D70</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="0.00000000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0x2A2B1433>
+              <entityId>ARTHUR</entityId>
+            </0x2A2B1433>
+            <0xEBCD4130 x="0.00000000" y="0.00000000" z="0.00000000" />
+            <0xB562C063 />
+            <0x1FE6F044>0x0AB1D812</0x1FE6F044>
+            <0x80626C51>FromEntity</0x80626C51>
+            <SoundType>OneShot</SoundType>
+          </Item> -->  
+     <!-- <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.90000000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="2.44500000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0xC252FB63</Name>
+            <0xA5B1359C value="false" />
+          </Item> -->
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="-0.98295400" y="0.24511100" z="0.00496000" w="-0.982954" />
+          <endRot x="0.00000000" y="0.00000000" z="0.76124400" w="0.64846500" />
+          <endTime value="2.90000000" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+    <Item key="S_EXIT_ALTERNATIVE" type="fwAnimSceneSectionData">
+      <pOriginOffset />
+      <0xBB18B485 type="fwAnimSceneEntityHandleData">
+        <entityId />
+      </0xBB18B485>
+      <0x47B47045 value="false" />
+      <loopCount value="1" />
+      <events type="fwAnimSceneEventListData">
+        <events>
+          <Item type="fwAnimScenePlayAnimEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>ARTHUR</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="4.67450000" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="false" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <clip type="fwAnimSceneClipData">
+              <clipDictionaryName>amb_misc@world_human_puke@male_a@exit</clipDictionaryName>
+              <clipName>EXIT</clipName>
+            </clip>
+            <fpsClip type="fwAnimSceneClipData">
+              <clipDictionaryName />
+              <clipName />
+            </fpsClip>
+            <animFlags>AF_UPPERBODY, AF_SECONDARY, AF_USE_MOVER_EXTRACTION</animFlags>
+            <flags>TAF_NOT_INTERRUPTABLE, TAF_DISABLE_GESTURES</flags>
+            <ragdollBlockingFlags />
+            <ikFlags />
+            <aiFlags />
+            <physFlags />
+            <filter />
+            <fpsFilter />
+            <bodyDampingTemplate />
+            <blendInDuration value="0.00000000" />
+            <blendOutDuration value="0.90000000" />
+            <0xEB3388F4 value="-1.00000000" />
+            <offsetTime value="0.00000000" />
+            <rate value="1.00000000" />
+            <useSceneOrigin value="false" />
+            <0x1F1E9763 value="false" />
+            <pSceneOffset />
+            <pApproach />
+          </Item>
+    <!--  <Item type="fwAnimScenePlayConversationAudioEventData">
+            <entity type="fwAnimSceneEntityHandleData">
+              <entityId>AUDIO</entityId>
+            </entity>
+            <startTime value="0.00000000" />
+            <endTime value="2.43333300" />
+            <preloadTime value="4.00000000" />
+            <pChildren />
+            <0xAB28F89C value="true" />
+            <state>0x9D9DEE9D</state>
+            <toolData />
+            <0x84B954E7 type="fwAnimSceneEntityHandleData">
+              <entityId />
+            </0x84B954E7>
+            <0xC7CF1919 />
+            <SoundName />
+            <OffsetTime value="0.00000000" />
+            <0x8F23A822 value="true" />
+            <0x4C4A3860 value="false" />
+            <0xDDB12FE3 value="false" />
+            <0xE5F31F59 value="false" />
+            <0x7C864873 />
+            <Name>0x8ECB90FB</Name>
+            <0xA5B1359C value="false" />
+          </Item> -->
+        </events>
+      </events>
+      <locationData>
+        <Item key="CAMERA" type="fwAnimSceneEntityLocationData">
+          <startPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <startTime value="-1.00000000" />
+          <endPos x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endRot x="1E10" y="1E10" z="1E10" w="1E10" />
+          <endTime value="-1.00000000" />
+        </Item>
+        <Item key="ARTHUR" type="fwAnimSceneEntityLocationData">
+          <startPos x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000" />
+          <startRot x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000" />
+          <startTime value="0.00000000" />
+          <endPos x="-0.98295400" y="0.24511100" z="0.00496000" w="-0.982954" />
+          <endRot x="0.00000000" y="0.00000000" z="0.76124400" w="0.64846500" />
+          <endTime value="4.67450000" />
+        </Item>
+      </locationData>
+      <0x0696FE9E />
+    </Item>
+  </sections>
+  <playLists>
+    <Item key="PL_LOOP" type="fwAnimScenePlayListData">
+      <sections>
+        <Item>S_LOOP</Item>
+      </sections>
+    </Item>
+    <Item key="PL_WAKE_UP" type="fwAnimScenePlayListData">
+      <sections>
+        <Item>0x31788D48</Item>
+        <Item>S_DRUNKEN_WALKING_UP</Item>
+        <Item>0xD494348E</Item>
+        <Item>S_EXIT</Item>
+      </sections>
+    </Item>
+    <Item key="HERB_PL" type="fwAnimScenePlayListData">
+      <sections> 
+        <Item>S_ENTER_FREEROAM</Item>
+        <Item>S_EXIT_FREEROAM</Item>
+      </sections>
+    </Item>
+  </playLists>
+  <flags />
+  <version value="17" />
+  <jenniferInterrelationCollections>0xB418ED04</jenniferInterrelationCollections>
+  <toolData />
+  <0x29C25EC9 />
+  <stateMachine>
+    <initialTransitions />
+    <states />
+    <editorData />
+  </stateMachine>
+  <0x8FB2F5A4>0xF3E3B5ED</0x8FB2F5A4>
+  <0x0558B627 value="false" />
+</fwAnimSceneData>
