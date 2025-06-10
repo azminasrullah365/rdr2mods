@@ -1,0 +1,19 @@
+<EasyInstall>
+    <Name>Realistic Arcade Visuals</Name>
+    <Author>azminasrullah365</Author>
+    <Version>1.0</Version>
+    <Link></Link>
+    <Metadata>
+    </Metadata>
+    <!-- Less Pickup Glows -->
+    <!-- Dirtier -->
+    <!-- Brighter Sun Darker Moon -->
+    <Resources>
+        <Resource>
+            <FileReplacement>
+                <GamePath>update:/common/data/visualsettings.dat</GamePath>
+                <FilePath>visualsettings.dat</FilePath>
+            </FileReplacement>
+		</Resource>
+	</Resources>
+</EasyInstall>
