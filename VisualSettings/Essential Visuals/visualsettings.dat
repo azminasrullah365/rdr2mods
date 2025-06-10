@@ -1,9 +1,10 @@
 # Visual Configuration Table
 # Platform tunnings: See platform specific file
-# Mod Version 1.3
+# Mod Version 1.4
 # Brighter Sun Darker Moon
 # Less Pickups Glows
 # Dirtier
+# Ped LOD
 
 				
 # stores intial values for configuration of in game elements
@@ -1185,9 +1186,9 @@ ped.naa.translucencyColor.green		0.008
 ped.naa.translucencyColor.blue		0.008
 
 # Lod distances for peds				
-ped.lod.distance.high	10.00
-ped.lod.distance.medium	20.00
-ped.lod.distance.low	60.00
+ped.lod.distance.high	20.00 # DEFAULT 10.00
+ped.lod.distance.medium	40.00 # DEFAULT 20.00
+ped.lod.distance.low	120.00 # DEFAULT 60.00
 pedincar.lod.distance.high	7.00	
 
 # ped detail
